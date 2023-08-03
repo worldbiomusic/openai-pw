@@ -188,5 +188,4 @@ fabric.properties
 # openai-pw (openai-python wrapper)
 openai-api-key.txt
 test/
-responses/
 logs/

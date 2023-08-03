@@ -1,0 +1,44 @@
+[
+	{
+		"model": "gpt-3.5-turbo",
+		"type": "chat",
+		"prompt": {
+			"role": "system",
+			"content": "You are a helpful assistant."
+		},
+		"created": 1691061245,
+		"from": "user"
+	},
+	{
+		"model": "gpt-3.5-turbo",
+		"type": "chat",
+		"prompt": {
+			"role": "user",
+			"content": "What is openai?"
+		},
+		"created": 1691061245,
+		"from": "user"
+	},
+	{
+		"id": "chatcmpl-7jQZJQEZ8YcNVo4AglmsYsWZ8RpN9",
+		"object": "chat.completion",
+		"created": 1691061245,
+		"model": "gpt-3.5-turbo-0613",
+		"choices": [
+			{
+				"index": 0,
+				"message": {
+					"role": "assistant",
+					"content": "OpenAI is an artificial intelligence research organization founded with the goal of ensuring that artificial general intelligence (AGI) benefits all of humanity. It conducts research in machine learning and AI, develops powerful models and technologies, and promotes the responsible and ethical use of AI. OpenAI also develops and releases various tools, platforms, and frameworks to advance AI capabilities and facilitate collaboration within the AI community."
+				},
+				"finish_reason": "stop"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 22,
+			"completion_tokens": 77,
+			"total_tokens": 99
+		},
+		"from": "bot"
+	}
+]

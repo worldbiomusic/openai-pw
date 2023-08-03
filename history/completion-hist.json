@@ -1,0 +1,30 @@
+[
+	{
+		"model": "text-davinci-003",
+		"type": "completion",
+		"prompt": "Tell some lies",
+		"created": 1691063377,
+		"from": "user"
+	},
+	{
+		"id": "cmpl-7jR7h2iTHZ3pw23qA9p8q0tXK0SMp",
+		"warning": "This model version is deprecated. Migrate before January 4, 2024 to avoid disruption of service. Learn more https://platform.openai.com/docs/deprecations",
+		"object": "text_completion",
+		"created": 1691063377,
+		"model": "text-davinci-003",
+		"choices": [
+			{
+				"text": " about yourself\n\n1. I speak five languages fluently.\n2.",
+				"index": 0,
+				"logprobs": null,
+				"finish_reason": "length"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 3,
+			"completion_tokens": 16,
+			"total_tokens": 19
+		},
+		"from": "bot"
+	}
+]
