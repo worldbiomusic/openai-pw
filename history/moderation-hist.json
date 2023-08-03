@@ -1,0 +1,45 @@
+[
+	{
+		"model": "text-moderation-latest",
+		"type": "moderation",
+		"prompt": "I want to kill them.",
+		"created": 1691063810,
+		"from": "user"
+	},
+	{
+		"id": "modr-7jREhoMLtAimQnMHnXgQS5Rhn1EJP",
+		"model": "text-moderation-005",
+		"results": [
+			{
+				"flagged": true,
+				"categories": {
+					"sexual": false,
+					"hate": false,
+					"harassment": false,
+					"self-harm": false,
+					"sexual/minors": false,
+					"hate/threatening": false,
+					"violence/graphic": false,
+					"self-harm/intent": false,
+					"self-harm/instructions": false,
+					"harassment/threatening": true,
+					"violence": true
+				},
+				"category_scores": {
+					"sexual": 1.1919823e-06,
+					"hate": 0.009971272,
+					"harassment": 0.28588277,
+					"self-harm": 1.5302104e-08,
+					"sexual/minors": 5.4162577e-08,
+					"hate/threatening": 0.0056832605,
+					"violence/graphic": 4.413079e-06,
+					"self-harm/intent": 8.1288354e-10,
+					"self-harm/instructions": 2.7467124e-11,
+					"harassment/threatening": 0.6180757,
+					"violence": 0.9901896
+				}
+			}
+		],
+		"from": "bot"
+	}
+]

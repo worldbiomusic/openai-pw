@@ -1,0 +1,67 @@
+[
+	{
+		"model": "gpt-3.5-turbo-0613",
+		"type": "chat",
+		"prompt": {
+			"role": "system",
+			"content": "You are a helpful assistant that can send function json when need."
+		},
+		"created": 1691080318,
+		"from": "user"
+	},
+	{
+		"model": "gpt-3.5-turbo-0613",
+		"type": "chat",
+		"prompt": {
+			"role": "user",
+			"content": "What is the amazon's stock price?"
+		},
+		"created": 1691080318,
+		"from": "user",
+		"functions": [
+			{
+				"name": "stock_price",
+				"description": "Get the stock price of a given company",
+				"parameters": {
+					"type": "object",
+					"properties": {
+						"company": {
+							"type": "string",
+							"description": "The company stock name, e.g. APPL"
+						}
+					},
+					"required": [
+						"company"
+					]
+				}
+			}
+		],
+		"function_call": "auto"
+	},
+	{
+		"id": "chatcmpl-7jVWxNo4X8G397xgR23jnC1K1USZU",
+		"object": "chat.completion",
+		"created": 1691080319,
+		"model": "gpt-3.5-turbo-0613",
+		"choices": [
+			{
+				"index": 0,
+				"message": {
+					"role": "assistant",
+					"content": null,
+					"function_call": {
+						"name": "stock_price",
+						"arguments": "{\n  \"company\": \"AMZN\"\n}"
+					}
+				},
+				"finish_reason": "function_call"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 81,
+			"completion_tokens": 16,
+			"total_tokens": 97
+		},
+		"from": "bot"
+	}
+]
