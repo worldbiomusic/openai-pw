@@ -185,7 +185,7 @@ fabric.properties
 .idea/
 
 
-# openai-pw (openai-python wrapper)
+# opaw (openai-python wrapper)
 openai-api-key.txt
 test/
 logs/
