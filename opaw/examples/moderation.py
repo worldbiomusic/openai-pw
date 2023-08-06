@@ -20,4 +20,4 @@ print("flagged:", flagged)
 print("flags:", true_flags)
 
 # save history if needed
-util.save_history(bot, "history/moderation-hist.json")
+bot.save_history("history/moderation-hist.json")

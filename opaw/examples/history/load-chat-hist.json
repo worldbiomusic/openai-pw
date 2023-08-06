@@ -40,5 +40,37 @@
 			"total_tokens": 110
 		},
 		"from": "bot"
+	},
+	{
+		"model": "gpt-3.5-turbo",
+		"type": "chat",
+		"prompt": {
+			"role": "user",
+			"content": "Then, when is that created?"
+		},
+		"created": 1691243293,
+		"from": "user"
+	},
+	{
+		"id": "chatcmpl-7kBvZ1vy1n7oNqTPMbwEjsL65YuhS",
+		"object": "chat.completion",
+		"created": 1691243293,
+		"model": "gpt-3.5-turbo-0613",
+		"choices": [
+			{
+				"index": 0,
+				"message": {
+					"role": "assistant",
+					"content": "I apologize, but without specific context or information, I cannot determine when \"that\" is created. Could you please provide more details or specify what \"that\" refers to?"
+				},
+				"finish_reason": "stop"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 14,
+			"completion_tokens": 35,
+			"total_tokens": 49
+		},
+		"from": "bot"
 	}
 ]

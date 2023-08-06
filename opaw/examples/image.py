@@ -13,6 +13,6 @@ response = bot.create("A black cat sitting on a frozen lake.", task="create", si
 print("image:", response["data"][0]["url"])
 
 # save history if needed
-util.save_history(bot, "history/image-hist.json")
+bot.save_history("history/image-hist.json")
 
 

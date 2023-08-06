@@ -18,10 +18,11 @@ class FileBot(Bot):
             return None
         memo = prompt
 
+        kargs["memo"] = memo
         request = {
             **kargs
         }
-        self._history_req(memo, kargs)
+        self._history_req(kargs)
 
         model = openai.File
         methods = {
@@ -34,6 +35,7 @@ class FileBot(Bot):
 
         # remove task from request
         task = request.pop('task')
+        request.pop("memo")
         if task not in methods:
             return None
 

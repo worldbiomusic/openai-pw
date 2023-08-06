@@ -23,5 +23,5 @@ response = bot.create(task="download", file_id=id)
 print("download response:", response)
 
 # save history if needed
-util.save_history(bot, "history/file-hist.json")
+bot.save_history("history/file-hist.json")
 

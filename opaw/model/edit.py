@@ -15,13 +15,13 @@ class EditBot(Bot):
         if input is None:
             return None
 
+        kargs["input"] = input
         request = {
             "model": self.model,
-            "input": input,
             **kargs
         }
 
-        self._history_req(input, kargs)
+        self._history_req(kargs)
         response = openai.Edit.create(**request)
         self._history_res(response)
         return response

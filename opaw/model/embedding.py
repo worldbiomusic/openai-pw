@@ -12,13 +12,13 @@ class EmbeddingBot(Bot):
         if prompt is None:
             return None
 
+        kargs["input"] = prompt
         request = {
             "model": self.model,
-            "input": prompt,
             **kargs
         }
 
-        self._history_req(prompt, kargs)
+        self._history_req(kargs)
         response = openai.Embedding.create(**request)
         self._history_res(response)
         return response

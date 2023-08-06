@@ -13,6 +13,6 @@ res_msg = response["choices"][0]["text"]
 print(res_msg)
 
 # save history if needed
-util.save_history(bot, "history/completion-hist.json")
+bot.save_history("history/completion-hist.json")
 
 

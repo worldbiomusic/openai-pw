@@ -13,6 +13,6 @@ embeddings = response["data"][0]["embedding"]
 print("embeddings:", embeddings)
 
 # save history if needed
-util.save_history(bot, "history/embedding-hist.json")
+bot.save_history("history/embedding-hist.json")
 
 
