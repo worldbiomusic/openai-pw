@@ -17,7 +17,7 @@ def loop_chat(model="gpt-3.5-turbo",
         bot_response = response["choices"][0]["message"]["content"]
         print(f"Bot: {bot_response}\n")
 
-    util.save_history(bot, history_file)
+    bot.save_history(history_file)
 
 
 # api key

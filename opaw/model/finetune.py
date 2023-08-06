@@ -12,17 +12,18 @@ class FinetuneBot(Bot):
 
     def create(self, prompt, **kargs):
         """
-        :param prompt: is not used for model. just for memo in history
+        :param prompt: is not used for model. just for memo in history (use kargs)
         """
         if prompt is None or not kargs.get("task"):
             return None
         memo = prompt
 
+        kargs["memo"] = memo
         request = {
             "model": self.model,
             **kargs
         }
-        self._history_req(memo, kargs)
+        self._history_req(kargs)
 
         model = openai.FineTune
         methods = {
@@ -35,6 +36,7 @@ class FinetuneBot(Bot):
 
         # remove task from request
         task = request.pop('task')
+        request.pop("memo")
         if task not in methods:
             return None
 

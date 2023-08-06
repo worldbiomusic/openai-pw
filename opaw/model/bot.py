@@ -1,3 +1,8 @@
+import io
+from datetime import datetime
+from opaw import util
+import json
+import os
 import time
 import copy
 import math
@@ -23,16 +28,16 @@ class Bot:
         """
         pass
 
-    def _history_req(self, prompt="", kargs=None):
+    def _history_req(self, kargs):
         """
         history user's request
         """
-        history = {"model": self.model,
-               "type": self.type,
-               "prompt": copy.deepcopy(prompt),
-               "created": math.floor(time.time()),
-               "from": "user"
-               }
+        history = {
+            "model": self.model,
+            "type": self.type,
+            "created": math.floor(time.time()),
+            "from": "user"
+        }
 
         if kargs:
             history.update(copy.deepcopy(kargs))  # kargs
@@ -49,3 +54,32 @@ class Bot:
         })
 
         self.history.append(copied_res)
+
+    def save_history(bot, file):
+        """
+        saves history in the given file or directory
+        :param file: the history file name (parent dirs will be created automatically)
+        """
+
+        # save with date format if dir is given
+        if os.path.isdir(file):
+            now = datetime.now().strftime("%Y%m%dT%H%M%S")
+            file = os.path.join(file, f"{now}.json")
+
+        # make all parent dirs
+        util.mkdirs(file)
+        with open(file, "w") as f:
+            json.dump(bot.history, f, indent="\t")
+
+    def load_history(self, hist):
+        """
+        loads history
+        :param hist: type could be a file or file path or dict
+        """
+        if isinstance(hist, str):  # file path
+            with open(hist) as f:
+                self.history = json.load(f)
+        elif isinstance(hist, io.IOBase):  # file
+            self.history = json.load(hist)
+        elif isinstance(hist, dict):  # json dict
+            self.history = hist

@@ -22,4 +22,4 @@ else:
     print("no function call")
 
 # save model history
-util.save_history(bot, "history/chat-fn-call-hist.json")
+bot.save_history("history/chat-fn-call-hist.json")

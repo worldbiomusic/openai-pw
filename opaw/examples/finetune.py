@@ -15,4 +15,4 @@ response = bot.create("test_memo for finetune list", task="list")
 print("finetune list:", response)
 
 # save history if needed
-util.save_history(bot, "history/finetune-hist.json")
+bot.save_history("history/finetune-hist.json")

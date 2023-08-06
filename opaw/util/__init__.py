@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 from os.path import join
@@ -19,23 +20,25 @@ def models():
     return [model["id"] for model in r["data"]]
 
 
-def save_history(bot, file):
-    """
-    saves bot's history in "history" directory
-    :param file: the history file name (parent dirs will be created automatically)
-    """
-
-    # save with date format if dir is given
-    if os.path.isdir(file):
-        now = datetime.now().strftime("%Y%m%dT%H%M%S")
-        file = join(file, f"{now}.json")
-
-    # make all parent dirs
-    mkdirs(file)
-    with open(file, "w") as f:
-        json.dump(bot.history, f, indent="\t")
-
-
 def mkdirs(file):
     parent_dir = os.path.dirname(file)
     os.makedirs(parent_dir, exist_ok=True)
+
+
+def filter_args(data):
+    """
+    remove special arguments
+    :param data: history or messages (format: [{}, {}, {}...])
+    """
+    common_args = ["type", "created", "from"]
+    etc_args = ["task", "memo"]
+    remove_args = common_args + etc_args
+
+    data = copy.deepcopy(data)
+    return [{k: v for k,v in e.items() if k not in remove_args} for e in data]
+
+def pprint(d):
+    print(pprints(d))
+
+def pprints(d):
+    return json.dumps(d, indent="\t")

@@ -19,14 +19,14 @@ class AudioBot(Bot):
         if prompt is None or not kargs.get("task"):
             return None
         file = prompt
+        kargs["file_name"] = file
 
         request = {
             "model": self.model,
             "file": open(file, "rb"),
             **kargs
         }
-        self._history_req(file, kargs)
-
+        self._history_req(kargs)
 
         model = openai.Audio
         methods = {
@@ -38,11 +38,10 @@ class AudioBot(Bot):
 
         # remove task from request
         task = request.pop('task')
+        request.pop("file_name")
         if task not in methods:
             return None
-
 
         response = methods[task](**request)
         self._history_res(response)
         return response
-

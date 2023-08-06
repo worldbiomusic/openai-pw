@@ -14,4 +14,4 @@ text = response["choices"][0]["text"]
 print("text:", text)
 
 # save history if needed
-util.save_history(bot, "history/edit-hist.json")
+bot.save_history("history/edit-hist.json")

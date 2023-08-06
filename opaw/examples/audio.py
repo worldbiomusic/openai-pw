@@ -17,6 +17,6 @@ response = bot.create("audio1.mp3", task="mt", language="en")
 print("mt:", response["text"])
 
 # save history if needed
-util.save_history(bot, "history/audio-hist.json")
+bot.save_history("history/audio-hist.json")
 
 

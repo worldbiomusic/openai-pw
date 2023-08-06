@@ -3,16 +3,14 @@ Unofficial python wrapper of [OpenAI](https://openai.com/) API.
 
 # Features
 - Wrapped models (chat, audio, image, embeddings ...)
-- 
+- History management
 
 # Quick start
 1. Download [`opaw`](https://pypi.org/project/opaw/) using pip.
 ```cmd
 pip install opaw
 ```
-
 2. Create a `open-api-key.txt` file and insert your [api key](https://platform.openai.com/account/api-keys) into the file.
-
 3. Write demo code.
 ```py
 from opaw.examples.basic import loop_chat 

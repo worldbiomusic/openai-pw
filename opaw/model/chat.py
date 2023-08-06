@@ -1,7 +1,10 @@
+import io
+from opaw import tool
 import json
 import opaw.tool
 import openai
 from opaw.model import bot
+from opaw import util
 
 
 class ChatBot(bot.Bot):
@@ -11,7 +14,7 @@ class ChatBot(bot.Bot):
 
     def __init__(self, model="gpt-3.5-turbo", messages=None):
         super().__init__(model, "chat")
-        # conversation history
+        # conversations
         self.messages = [] if messages is None else messages
 
     def create(self, prompt=None, **kargs):
@@ -25,16 +28,19 @@ class ChatBot(bot.Bot):
         role = kargs["role"] if kargs.get("role") else "user"
 
         if prompt is not None:
-            prompt = prompt if isinstance(prompt, str) else str(prompt)
+            prompt = str(prompt)
             self.messages.append({"role": role, "content": prompt})
 
+        # kargs["msg"] = self.messages[-1]
         request = {
             "model": self.model,
             "messages": self.messages,
             **kargs
         }
 
-        self._history_req(self.messages[-1], kargs)
+        self._history_req(kargs)
+        # kargs.pop("msg", None)  # remove prompt key after history saved
+
         response = openai.ChatCompletion.create(**request)
 
         # insert response message to the messages
@@ -71,10 +77,25 @@ class ChatBot(bot.Bot):
         """
         return sum([int(msg["usage"]["total_tokens"]) for msg in messages])
 
+    def load_msgs(self, msgs):
+        """
+        loads conversation history
+        :param msgs: type could be a file or file path or dict
+
+        ['created', 'from', 'model', 'prompt', 'type']
+
+        """
+
+        if isinstance(msgs, str):  # file path (str)
+            with open(msgs) as f:
+                messages = json.load(f)
+        elif isinstance(msgs, io.IOBase):  # file
+            messages = json.load(msgs)
+        elif isinstance(msgs, dict):  # json dict
+            messages = msgs
+        else:
+            return
+
+        self.messages = util.filter_args(messages)
 
 
-# fn_call_msg = {
-#     "role": "function",
-#     "name": function_name,
-#     "content": fn_result,
-# }

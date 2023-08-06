@@ -11,7 +11,7 @@ bot.add_message("You are a helpful assistant.", role="system")
 prompt = "What is openai?"
 response = bot.create(prompt)
 res_msg = response["choices"][0]["message"]["content"]
-print("resopnse:", res_msg)
+print("response:", res_msg)
 
 # save history if needed
-util.save_history(bot, "history/chat-hist.json")
+bot.save_history("history/chat-hist.json")
