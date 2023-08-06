@@ -1,0 +1,33 @@
+[
+	{
+		"file": "file-upload.jsonl",
+		"purpose": "fine-tune"
+	},
+	{
+		"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+		"object": "file",
+		"purpose": "fine-tune",
+		"filename": "file",
+		"bytes": 389,
+		"created_at": 1691335682,
+		"status": "uploaded",
+		"status_details": null
+	},
+	{
+		"id": "file-8rh2wHJBIqj2xiPibQqKX62B"
+	},
+	{
+		"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+		"object": "file",
+		"purpose": "fine-tune",
+		"filename": "file",
+		"bytes": 389,
+		"created_at": 1691335682,
+		"status": "uploaded",
+		"status_details": null
+	},
+	{
+		"id": "file-8rh2wHJBIqj2xiPibQqKX62B"
+	},
+	"{\"prompt\":  \"Hi, what is your name?\", \"completion\": \"Hello! I'm ChatGPT!.\"}\r\n{\"prompt\":  \"What is your job?\", \"completion\": \"My job is help people for general purposes.\"}\r\n{\"prompt\":  \"How can you help people?\", \"completion\": \"I can understand context and create something like pine-apple pizza.\"}\r\n{\"prompt\":  \"Then, what do we have to do to save the earth?\", \"completion\": \"Too late.\"}\r\n"
+]

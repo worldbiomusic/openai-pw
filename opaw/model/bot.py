@@ -28,34 +28,22 @@ class Bot:
         """
         pass
 
-    def _history_req(self, kargs):
+    def _history_req(self, request):
         """
         history user's request
         """
-        history = {
-            "model": self.model,
-            "type": self.type,
-            "created": math.floor(time.time()),
-            "from": "user"
-        }
+        if request:
+            self.history.append(copy.deepcopy(request))
 
-        if kargs:
-            history.update(copy.deepcopy(kargs))  # kargs
-
-        self.history.append(history)
 
     def _history_res(self, response):
         """
         history response of the bot
         """
-        copied_res = copy.deepcopy(response)
-        copied_res.update({
-            "from": "bot"
-        })
+        if response:
+            self.history.append(copy.deepcopy(response))
 
-        self.history.append(copied_res)
-
-    def save_history(bot, file):
+    def save_history(self, file):
         """
         saves history in the given file or directory
         :param file: the history file name (parent dirs will be created automatically)
@@ -69,7 +57,7 @@ class Bot:
         # make all parent dirs
         util.mkdirs(file)
         with open(file, "w") as f:
-            json.dump(bot.history, f, indent="\t")
+            json.dump(self.history, f, indent="\t")
 
     def load_history(self, hist):
         """

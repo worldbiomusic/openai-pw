@@ -1,28 +1,18 @@
 [
 	{
 		"model": "whisper-1",
-		"type": "audio",
-		"prompt": "audio1.mp3",
-		"created": 1691170067,
-		"from": "user",
-		"task": "stt",
+		"file": "audio1.mp3",
 		"language": "en"
 	},
 	{
-		"text": "Saludos y expresiones, saludos, hola, hello, hello.",
-		"from": "bot"
+		"text": "Saludos y expresiones, saludos, hola, hello, hello."
 	},
 	{
 		"model": "whisper-1",
-		"type": "audio",
-		"prompt": "audio1.mp3",
-		"created": 1691170069,
-		"from": "user",
-		"task": "mt",
+		"file": "audio1.mp3",
 		"language": "en"
 	},
 	{
-		"text": "Saludos y expresiones. Saludos. Hola. Hello. Hello.",
-		"from": "bot"
+		"text": "Saludos y expresiones. Saludos. Hola. Hello. Hello."
 	}
 ]

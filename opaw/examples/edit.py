@@ -7,7 +7,7 @@ setup()
 
 # edit
 bot = EditBot()
-prompt = "Hey, tis was my filst car!!"
+prompt = "Hey, this was my filst car!!"  # filst -> first
 instruction = "Fix the spelling mistakes"
 response = bot.create(prompt, instruction=instruction)
 text = response["choices"][0]["text"]

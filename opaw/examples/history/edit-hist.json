@@ -1,15 +1,12 @@
 [
 	{
 		"model": "text-davinci-edit-001",
-		"type": "edit",
-		"prompt": "Hey, tis was my filst car!!",
-		"created": 1691061628,
-		"from": "user",
+		"input": "Hey, this was my filst car!!",
 		"instruction": "Fix the spelling mistakes"
 	},
 	{
 		"object": "edit",
-		"created": 1691061629,
+		"created": 1691332347,
 		"choices": [
 			{
 				"text": "Hey, this was my first car!!\n",
@@ -17,10 +14,9 @@
 			}
 		],
 		"usage": {
-			"prompt_tokens": 26,
-			"completion_tokens": 29,
-			"total_tokens": 55
-		},
-		"from": "bot"
+			"prompt_tokens": 25,
+			"completion_tokens": 28,
+			"total_tokens": 53
+		}
 	}
 ]

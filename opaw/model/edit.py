@@ -10,18 +10,17 @@ class EditBot(Bot):
     def __init__(self, model="text-davinci-edit-001"):
         super().__init__(model, "edit")
 
-    def create(self, prompt, **kargs):
-        input = prompt
+    def create(self, input, **kargs):
         if input is None:
             return None
 
-        kargs["input"] = input
         request = {
             "model": self.model,
+            "input": input,
             **kargs
         }
 
-        self._history_req(kargs)
+        self._history_req(request)
         response = openai.Edit.create(**request)
         self._history_res(response)
         return response

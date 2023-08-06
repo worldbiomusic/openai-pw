@@ -17,14 +17,6 @@ class ImageBot(Bot):
         if prompt is None or not kargs.get("task"):
             return None
 
-        kargs["prompt"] = prompt
-        request = {
-            "model": self.model,
-            **kargs
-        }
-
-        self._history_req(kargs)
-
         model = openai.Image
         methods = {
             "create": model.create,
@@ -32,14 +24,19 @@ class ImageBot(Bot):
             "variation": model.create_variation
         }
 
-        # remove task from request
-        task = request.pop('task')
+        task = kargs.pop('task')
         if task not in methods:
             return None
 
-        request.pop("model")  # remove model key from request
+        request = {
+            "prompt": prompt,
+            **kargs
+        }
+
         if task == "variation":  # remove prompt when variation
             request.pop("prompt")
+
+        self._history_req(request)
 
         response = methods[task](**request)
         self._history_res(response)

@@ -1,23 +1,16 @@
 [
 	{
 		"model": "gpt-3.5-turbo-0613",
-		"type": "chat",
-		"prompt": {
-			"role": "system",
-			"content": "You are a helpful assistant that can send function json when need."
-		},
-		"created": 1691080318,
-		"from": "user"
-	},
-	{
-		"model": "gpt-3.5-turbo-0613",
-		"type": "chat",
-		"prompt": {
-			"role": "user",
-			"content": "What is the amazon's stock price?"
-		},
-		"created": 1691080318,
-		"from": "user",
+		"messages": [
+			{
+				"role": "system",
+				"content": "You are a helpful assistant that can send function json when need."
+			},
+			{
+				"role": "user",
+				"content": "What is the amazon's stock price?"
+			}
+		],
 		"functions": [
 			{
 				"name": "stock_price",
@@ -39,9 +32,9 @@
 		"function_call": "auto"
 	},
 	{
-		"id": "chatcmpl-7jVWxNo4X8G397xgR23jnC1K1USZU",
+		"id": "chatcmpl-7ka5pG3OKSoYVEqouILl2TkAW4lnm",
 		"object": "chat.completion",
-		"created": 1691080319,
+		"created": 1691336185,
 		"model": "gpt-3.5-turbo-0613",
 		"choices": [
 			{
@@ -51,7 +44,7 @@
 					"content": null,
 					"function_call": {
 						"name": "stock_price",
-						"arguments": "{\n  \"company\": \"AMZN\"\n}"
+						"arguments": "{\n\"company\": \"AMZN\"\n}"
 					}
 				},
 				"finish_reason": "function_call"
@@ -59,9 +52,8 @@
 		],
 		"usage": {
 			"prompt_tokens": 81,
-			"completion_tokens": 16,
-			"total_tokens": 97
-		},
-		"from": "bot"
+			"completion_tokens": 15,
+			"total_tokens": 96
+		}
 	}
 ]

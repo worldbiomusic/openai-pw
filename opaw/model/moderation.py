@@ -10,18 +10,17 @@ class ModerationBot(Bot):
     def __init__(self, model="text-moderation-latest"):
         super().__init__(model, "moderation")
 
-    def create(self, prompt, **kargs):
-        input = prompt
+    def create(self, input, **kargs):
         if input is None:
             return None
 
-        kargs["input"] = input
         request = {
             "model": self.model,
+            "input": input,
             **kargs
         }
 
-        self._history_req(kargs)
+        self._history_req(request)
         response = openai.Moderation.create(**request)
         self._history_res(response)
         return response

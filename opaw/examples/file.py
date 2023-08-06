@@ -8,19 +8,18 @@ setup()
 bot = FileBot()
 
 # file upload
-
-file = open("file-upload.jsonl", "rb")
-response = bot.create(task="upload", file=file, purpose="fine-tune")
+response = bot.create(task="upload", file="file-upload.jsonl", purpose="fine-tune")
 print("file-upload response:", response)
 id = response["id"]
 
 # retrieve a file
-response = bot.create(task="retrieve", file_id=id)
+response = bot.create(task="retrieve", id=id)
 print("list response:", response)
 
 # download file
-response = bot.create(task="download", file_id=id)
+response = bot.create(task="download", id=id)
 print("download response:", response)
+print(type(response))
 
 # save history if needed
 bot.save_history("history/file-hist.json")

@@ -1,3 +1,4 @@
+import copy
 import io
 from opaw import tool
 import json
@@ -17,29 +18,27 @@ class ChatBot(bot.Bot):
         # conversations
         self.messages = [] if messages is None else messages
 
-    def create(self, prompt=None, **kargs):
+    def create(self, content=None, **kargs):
         """
         Gets a response from bot
-        :param prompt: get a response with messages (content)
+        :param content: get a response with messages (content)
         :param kargs: other args
         :return:
         """
         # default
         role = kargs["role"] if kargs.get("role") else "user"
 
-        if prompt is not None:
-            prompt = str(prompt)
-            self.messages.append({"role": role, "content": prompt})
+        if content is not None:
+            content = str(content)
+            self.add_message(content, role=role)
 
-        # kargs["msg"] = self.messages[-1]
         request = {
             "model": self.model,
             "messages": self.messages,
             **kargs
         }
 
-        self._history_req(kargs)
-        # kargs.pop("msg", None)  # remove prompt key after history saved
+        self._history_req(request)
 
         response = openai.ChatCompletion.create(**request)
 
@@ -52,7 +51,6 @@ class ChatBot(bot.Bot):
 
     def add_message(self, content, role="user"):
         self.messages.append({"role": role, "content": content})
-        self._history_req(self.messages[-1])
 
     def call_function(self, response):
         fn_call = self.get_fn_call(response)
@@ -77,25 +75,28 @@ class ChatBot(bot.Bot):
         """
         return sum([int(msg["usage"]["total_tokens"]) for msg in messages])
 
-    def load_msgs(self, msgs):
+    def load_msgs(self, history):
         """
         loads conversation history
-        :param msgs: type could be a file or file path or dict
-
-        ['created', 'from', 'model', 'prompt', 'type']
-
+        :param history: type could be a file or file path or dict
         """
 
-        if isinstance(msgs, str):  # file path (str)
-            with open(msgs) as f:
-                messages = json.load(f)
-        elif isinstance(msgs, io.IOBase):  # file
-            messages = json.load(msgs)
-        elif isinstance(msgs, dict):  # json dict
-            messages = msgs
+        if isinstance(history, str):  # file path (str)
+            with open(history) as f:
+                hist = json.load(f)
+        elif isinstance(history, io.IOBase):  # file
+            hist = json.load(history)
+        elif isinstance(history, dict):  # json dict
+            hist = history
         else:
             return
 
-        self.messages = util.filter_args(messages)
+        # load history
+        self.history = copy.deepcopy(hist)
 
+        # load messages of the last request
+        self.messages = next((item["messages"] for item in hist[::-1] if "messages" in item), [])
 
+        # insert last response to messages
+        last_res_msg = next((self._get_res_msg(item) for item in hist[::-1] if "choices" in item), None)
+        self.messages.append(last_res_msg)

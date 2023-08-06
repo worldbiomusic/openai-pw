@@ -1,10 +1,7 @@
 [
 	{
 		"model": "text-embedding-ada-002",
-		"type": "embedding",
-		"prompt": "Cheese is melting on my laptop",
-		"created": 1691061795,
-		"from": "user"
+		"input": "Cheese is melting on my laptop"
 	},
 	{
 		"object": "list",
@@ -1556,7 +1553,6 @@
 		"usage": {
 			"prompt_tokens": 7,
 			"total_tokens": 7
-		},
-		"from": "bot"
+		}
 	}
 ]
