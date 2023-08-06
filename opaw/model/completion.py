@@ -12,13 +12,13 @@ class CompletionBot(Bot):
         if prompt is None:
             return None
 
-        kargs["prompt"] = prompt
         request = {
             "model": self.model,
+            "prompt": prompt,
             **kargs
         }
 
-        self._history_req(kargs)
+        self._history_req(request)
         response = openai.Completion.create(**request)
         self._history_res(response)
         return response

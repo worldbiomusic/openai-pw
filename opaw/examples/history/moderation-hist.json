@@ -1,13 +1,10 @@
 [
 	{
 		"model": "text-moderation-latest",
-		"type": "moderation",
-		"prompt": "I want to kill them!!",
-		"created": 1691170240,
-		"from": "user"
+		"input": "I want to kill them!!"
 	},
 	{
-		"id": "modr-7jsvJDYjzw9T7Re935UESs7hjkKkO",
+		"id": "modr-7ka70xuoZQZEIgtzFf0xn3LJFnDlu",
 		"model": "text-moderation-005",
 		"results": [
 			{
@@ -39,7 +36,6 @@
 					"violence": 0.9929408
 				}
 			}
-		],
-		"from": "bot"
+		]
 	}
 ]

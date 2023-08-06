@@ -7,7 +7,7 @@ setup()
 
 # finetune create
 bot = FinetuneBot()
-response = bot.create("test_memo for finetune create", task="create", training_file="...")
+response = bot.create("test_memo for finetune create", task="create", training_file="file-8rh2wHJBIqj2xiPibQqKX62B")
 print("finetune create:", response)
 
 # finetune list

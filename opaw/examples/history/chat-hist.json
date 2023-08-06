@@ -1,44 +1,78 @@
 [
 	{
 		"model": "gpt-3.5-turbo",
-		"type": "chat",
-		"prompt": {
-			"role": "system",
-			"content": "You are a helpful assistant."
-		},
-		"created": 1691238998,
-		"from": "user"
+		"messages": [
+			{
+				"role": "system",
+				"content": "You are a helpful assistant."
+			},
+			{
+				"role": "user",
+				"content": "What is openai?"
+			}
+		]
 	},
 	{
-		"model": "gpt-3.5-turbo",
-		"type": "chat",
-		"prompt": {
-			"role": "user",
-			"content": "What is openai?"
-		},
-		"created": 1691238998,
-		"from": "user"
-	},
-	{
-		"id": "chatcmpl-7kAoIJMnAkqWK1ZdQwRFTPUESsS2K",
+		"id": "chatcmpl-7kZ4qrX2jIp8o5jX6RXGtn1NDZWel",
 		"object": "chat.completion",
-		"created": 1691238998,
+		"created": 1691332280,
 		"model": "gpt-3.5-turbo-0613",
 		"choices": [
 			{
 				"index": 0,
 				"message": {
 					"role": "assistant",
-					"content": "OpenAI is an artificial intelligence research laboratory and company. It aims to ensure that artificial general intelligence (AGI) benefits all of humanity. OpenAI conducts research and develops AI technologies, while also promoting the principles of safety, cooperation, and transparency in the field of AI. The organization provides various services and products, such as language models like GPT-3, which have generated significant interest and potential applications in a wide range of fields."
+					"content": "OpenAI is an artificial intelligence research laboratory and company. Its goal is to ensure that artificial general intelligence (AGI), also known as highly autonomous systems that outperform humans at most economically valuable work, benefits all of humanity. OpenAI focuses on conducting research, developing AI models, and sharing their findings with the broader community. They have produced influential AI technologies like GPT-3, a language model with impressive text generation capabilities. They also promote the ethical and responsible development and use of AI."
 				},
 				"finish_reason": "stop"
 			}
 		],
 		"usage": {
 			"prompt_tokens": 22,
-			"completion_tokens": 88,
-			"total_tokens": 110
-		},
-		"from": "bot"
+			"completion_tokens": 99,
+			"total_tokens": 121
+		}
+	},
+	{
+		"model": "gpt-3.5-turbo",
+		"messages": [
+			{
+				"role": "system",
+				"content": "You are a helpful assistant."
+			},
+			{
+				"role": "user",
+				"content": "What is openai?"
+			},
+			{
+				"role": "assistant",
+				"content": "OpenAI is an artificial intelligence research laboratory and company. Its goal is to ensure that artificial general intelligence (AGI), also known as highly autonomous systems that outperform humans at most economically valuable work, benefits all of humanity. OpenAI focuses on conducting research, developing AI models, and sharing their findings with the broader community. They have produced influential AI technologies like GPT-3, a language model with impressive text generation capabilities. They also promote the ethical and responsible development and use of AI."
+			},
+			{
+				"role": "user",
+				"content": "Then, who made it?"
+			}
+		]
+	},
+	{
+		"id": "chatcmpl-7kZ4v9CeMia8jSzLVxKhpgmQL8knr",
+		"object": "chat.completion",
+		"created": 1691332285,
+		"model": "gpt-3.5-turbo-0613",
+		"choices": [
+			{
+				"index": 0,
+				"message": {
+					"role": "assistant",
+					"content": "OpenAI was founded by Elon Musk, Sam Altman, Greg Brockman, Wojciech Zaremba, Ilya Sutskever, and John Schulman. Elon Musk, the CEO of Tesla and SpaceX, was one of the initial founders, but he has since stepped down from his active involvement in the company. The team of cofounders brought together their expertise in artificial intelligence, machine learning, and entrepreneurship to establish OpenAI in December 2015."
+				},
+				"finish_reason": "stop"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 135,
+			"completion_tokens": 96,
+			"total_tokens": 231
+		}
 	}
 ]

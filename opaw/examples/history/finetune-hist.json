@@ -1,0 +1,82 @@
+[
+	{
+		"model": "curie",
+		"training_file": "file-8rh2wHJBIqj2xiPibQqKX62B"
+	},
+	{
+		"id": "ft-oNFl3BH5pcwIfI6H8OvXqWIJ",
+		"object": "fine-tune",
+		"hyperparams": {
+			"n_epochs": 4,
+			"batch_size": null,
+			"prompt_loss_weight": 0.01,
+			"learning_rate_multiplier": null
+		},
+		"organization_id": "org-HTVyxQJR6yE8FUdANWlFr8Vh",
+		"model": "curie",
+		"training_files": [
+			{
+				"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+				"object": "file",
+				"purpose": "fine-tune",
+				"filename": "file",
+				"bytes": 389,
+				"created_at": 1691335682,
+				"status": "processed",
+				"status_details": null
+			}
+		],
+		"validation_files": [],
+		"result_files": [],
+		"created_at": 1691336147,
+		"updated_at": 1691336147,
+		"status": "pending",
+		"fine_tuned_model": null,
+		"events": [
+			{
+				"object": "fine-tune-event",
+				"level": "info",
+				"message": "Created fine-tune: ft-oNFl3BH5pcwIfI6H8OvXqWIJ",
+				"created_at": 1691336147
+			}
+		]
+	},
+	{
+		"model": "curie"
+	},
+	{
+		"object": "list",
+		"data": [
+			{
+				"id": "ft-oNFl3BH5pcwIfI6H8OvXqWIJ",
+				"object": "fine-tune",
+				"hyperparams": {
+					"n_epochs": 4,
+					"batch_size": null,
+					"prompt_loss_weight": 0.01,
+					"learning_rate_multiplier": null
+				},
+				"organization_id": "org-HTVyxQJR6yE8FUdANWlFr8Vh",
+				"model": "curie",
+				"training_files": [
+					{
+						"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+						"object": "file",
+						"purpose": "fine-tune",
+						"filename": "file",
+						"bytes": 389,
+						"created_at": 1691335682,
+						"status": "processed",
+						"status_details": null
+					}
+				],
+				"validation_files": [],
+				"result_files": [],
+				"created_at": 1691336147,
+				"updated_at": 1691336147,
+				"status": "pending",
+				"fine_tuned_model": null
+			}
+		]
+	}
+]

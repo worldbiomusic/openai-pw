@@ -9,9 +9,8 @@ setup()
 # chat
 bot = ChatBot()
 bot.load_msgs("history/chat-hist.json")  # load history
-print(util.pprints(bot.messages))
 
-response = bot.create("Then, when is it created?")
+response = bot.create("Then, what products are made in there?")
 res_msg = response["choices"][0]["message"]["content"]
 print("response:", res_msg)
 

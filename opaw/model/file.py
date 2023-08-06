@@ -10,35 +10,39 @@ class FileBot(Bot):
     def __init__(self):
         super().__init__("bot", "file")
 
-    def create(self, prompt=None, **kargs):
+    def create(self, _=None, **kargs):
         """
-        :param prompt: is not used for model, just memo in history (use kargs)
+        :param _: is not used (use kargs instead)
         """
         if not kargs.get("task"):
             return None
-        memo = prompt
-
-        kargs["memo"] = memo
-        request = {
-            **kargs
-        }
-        self._history_req(kargs)
 
         model = openai.File
         methods = {
             "list": model.list,
-            "upload": model.create,
-            "delete": model.delete,
-            "retrieve": model.retrieve,
-            "download": model.download,
+            "upload": model.create,  # file
+            "delete": model.delete,  # sid
+            "retrieve": model.retrieve,  # id
+            "download": model.download,  # id
         }
 
-        # remove task from request
-        task = request.pop('task')
-        request.pop("memo")
+        task = kargs.pop('task')
         if task not in methods:
             return None
 
+        request = {
+            **kargs
+        }
+        self._history_req(request)
+
+        if task == "upload":
+            request["file"] = open(request["file"], "rb")
         response = methods[task](**request)
-        self._history_res(response)
+
+        if task == "download":
+            # convert byte (b"") response to
+            self._history_res(response.decode("utf-8"))
+        else:
+            self._history_res(response)
+
         return response

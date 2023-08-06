@@ -6,12 +6,14 @@ Unofficial python wrapper of [OpenAI](https://openai.com/) API.
 - History management
 
 # Quick start
-1. Download [`opaw`](https://pypi.org/project/opaw/) using pip.
+You can also play with in [this colab](https://colab.research.google.com/drive/1nJ1-YwLMSxSVx092uBVoarvuVUyt65xC?usp=drive_link). Or
+
+1. Download `openai` and [`opaw`](https://pypi.org/project/opaw/) using pip. 
 ```cmd
-pip install opaw
+pip install openai opaw
 ```
 2. Create a `open-api-key.txt` file and insert your [api key](https://platform.openai.com/account/api-keys) into the file.
-3. Write demo code.
+3. Write a demo code and play with ChatGPT.
 ```py
 from opaw.examples.basic import loop_chat 
 from opaw import util
