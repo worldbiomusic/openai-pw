@@ -14,7 +14,7 @@ You can also play with in [this colab](https://colab.research.google.com/drive/1
 ```cmd
 pip install openai opaw
 ```
-2. Create a `open-api-key.txt` file and insert [your api key](https://platform.openai.com/account/api-keys) into the file.
+2. Create a `open-api-key.txt` file and insert [your api key](https://platform.openai.com/account/api-keys) into the file. Or set an environment variable with the name `OPENAI_API_KEY`.
 3. Write a demo code and play with ChatGPT.
 ```py
 from opaw.examples.basic import loop_chat 
