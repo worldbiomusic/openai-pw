@@ -1,3 +1,8 @@
+##################################################
+# Update version of setup.py and setup.cfg first #
+##################################################
+
+
 # remove exist files in dist dir
 rm dist/*
 
