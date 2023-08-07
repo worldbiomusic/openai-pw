@@ -4,30 +4,30 @@
 		"purpose": "fine-tune"
 	},
 	{
-		"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
 		"object": "file",
 		"purpose": "fine-tune",
 		"filename": "file",
-		"bytes": 389,
-		"created_at": 1691335682,
+		"bytes": 392,
+		"created_at": 1691391585,
 		"status": "uploaded",
 		"status_details": null
 	},
 	{
-		"id": "file-8rh2wHJBIqj2xiPibQqKX62B"
+		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z"
 	},
 	{
-		"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
 		"object": "file",
 		"purpose": "fine-tune",
 		"filename": "file",
-		"bytes": 389,
-		"created_at": 1691335682,
+		"bytes": 392,
+		"created_at": 1691391585,
 		"status": "uploaded",
 		"status_details": null
 	},
 	{
-		"id": "file-8rh2wHJBIqj2xiPibQqKX62B"
+		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z"
 	},
-	"{\"prompt\":  \"Hi, what is your name?\", \"completion\": \"Hello! I'm ChatGPT!.\"}\r\n{\"prompt\":  \"What is your job?\", \"completion\": \"My job is help people for general purposes.\"}\r\n{\"prompt\":  \"How can you help people?\", \"completion\": \"I can understand context and create something like pine-apple pizza.\"}\r\n{\"prompt\":  \"Then, what do we have to do to save the earth?\", \"completion\": \"Too late.\"}\r\n"
+	"{\"prompt\":  \"Hi, what is your name?\", \"completion\": \"Hello! I'm ChatGPT!.\"}\r\n{\"prompt\":  \"What is your job?\", \"completion\": \"My job is helping people for general purposes.\"}\r\n{\"prompt\":  \"How can you help people?\", \"completion\": \"I can understand context and create something like pine-apple pizza.\"}\r\n{\"prompt\":  \"Then, what do we have to do to save the earth?\", \"completion\": \"Too late.\"}\r\n"
 ]

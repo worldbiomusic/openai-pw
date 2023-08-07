@@ -1,10 +1,10 @@
 [
 	{
 		"model": "curie",
-		"training_file": "file-8rh2wHJBIqj2xiPibQqKX62B"
+		"training_file": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z"
 	},
 	{
-		"id": "ft-oNFl3BH5pcwIfI6H8OvXqWIJ",
+		"id": "ft-lRBBYP41Uq4ztz9SiHMPVm6r",
 		"object": "fine-tune",
 		"hyperparams": {
 			"n_epochs": 4,
@@ -16,28 +16,28 @@
 		"model": "curie",
 		"training_files": [
 			{
-				"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+				"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
 				"object": "file",
 				"purpose": "fine-tune",
 				"filename": "file",
-				"bytes": 389,
-				"created_at": 1691335682,
+				"bytes": 392,
+				"created_at": 1691391585,
 				"status": "processed",
 				"status_details": null
 			}
 		],
 		"validation_files": [],
 		"result_files": [],
-		"created_at": 1691336147,
-		"updated_at": 1691336147,
+		"created_at": 1691391848,
+		"updated_at": 1691391848,
 		"status": "pending",
 		"fine_tuned_model": null,
 		"events": [
 			{
 				"object": "fine-tune-event",
 				"level": "info",
-				"message": "Created fine-tune: ft-oNFl3BH5pcwIfI6H8OvXqWIJ",
-				"created_at": 1691336147
+				"message": "Created fine-tune: ft-lRBBYP41Uq4ztz9SiHMPVm6r",
+				"created_at": 1691391848
 			}
 		]
 	},
@@ -49,6 +49,47 @@
 		"data": [
 			{
 				"id": "ft-oNFl3BH5pcwIfI6H8OvXqWIJ",
+				"object": "fine-tune",
+				"hyperparams": {
+					"n_epochs": 4,
+					"batch_size": 1,
+					"prompt_loss_weight": 0.01,
+					"learning_rate_multiplier": 0.1
+				},
+				"organization_id": "org-HTVyxQJR6yE8FUdANWlFr8Vh",
+				"model": "curie",
+				"training_files": [
+					{
+						"id": "file-8rh2wHJBIqj2xiPibQqKX62B",
+						"object": "file",
+						"purpose": "fine-tune",
+						"filename": "file",
+						"bytes": 389,
+						"created_at": 1691335682,
+						"status": "processed",
+						"status_details": null
+					}
+				],
+				"validation_files": [],
+				"result_files": [
+					{
+						"id": "file-Hc7U0LJDgpBjEj4g0pmEkDp3",
+						"object": "file",
+						"purpose": "fine-tune-results",
+						"filename": "compiled_results.csv",
+						"bytes": 910,
+						"created_at": 1691342088,
+						"status": "processed",
+						"status_details": null
+					}
+				],
+				"created_at": 1691336147,
+				"updated_at": 1691342089,
+				"status": "succeeded",
+				"fine_tuned_model": "curie:ft-personal-2023-08-06-17-14-47"
+			},
+			{
+				"id": "ft-AlOYKBBLDNoMt7PBtG4Plyh9",
 				"object": "fine-tune",
 				"hyperparams": {
 					"n_epochs": 4,
@@ -72,8 +113,98 @@
 				],
 				"validation_files": [],
 				"result_files": [],
-				"created_at": 1691336147,
-				"updated_at": 1691336147,
+				"created_at": 1691391606,
+				"updated_at": 1691391606,
+				"status": "pending",
+				"fine_tuned_model": null
+			},
+			{
+				"id": "ft-VBV3TDxwMcxQpS2H58MF4ZBT",
+				"object": "fine-tune",
+				"hyperparams": {
+					"n_epochs": 4,
+					"batch_size": null,
+					"prompt_loss_weight": 0.01,
+					"learning_rate_multiplier": null
+				},
+				"organization_id": "org-HTVyxQJR6yE8FUdANWlFr8Vh",
+				"model": "curie",
+				"training_files": [
+					{
+						"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
+						"object": "file",
+						"purpose": "fine-tune",
+						"filename": "file",
+						"bytes": 392,
+						"created_at": 1691391585,
+						"status": "processed",
+						"status_details": null
+					}
+				],
+				"validation_files": [],
+				"result_files": [],
+				"created_at": 1691391659,
+				"updated_at": 1691391659,
+				"status": "pending",
+				"fine_tuned_model": null
+			},
+			{
+				"id": "ft-MAq4WYknfntLT1thtAlIhvsX",
+				"object": "fine-tune",
+				"hyperparams": {
+					"n_epochs": 4,
+					"batch_size": null,
+					"prompt_loss_weight": 0.01,
+					"learning_rate_multiplier": null
+				},
+				"organization_id": "org-HTVyxQJR6yE8FUdANWlFr8Vh",
+				"model": "curie",
+				"training_files": [
+					{
+						"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
+						"object": "file",
+						"purpose": "fine-tune",
+						"filename": "file",
+						"bytes": 392,
+						"created_at": 1691391585,
+						"status": "processed",
+						"status_details": null
+					}
+				],
+				"validation_files": [],
+				"result_files": [],
+				"created_at": 1691391822,
+				"updated_at": 1691391822,
+				"status": "pending",
+				"fine_tuned_model": null
+			},
+			{
+				"id": "ft-lRBBYP41Uq4ztz9SiHMPVm6r",
+				"object": "fine-tune",
+				"hyperparams": {
+					"n_epochs": 4,
+					"batch_size": null,
+					"prompt_loss_weight": 0.01,
+					"learning_rate_multiplier": null
+				},
+				"organization_id": "org-HTVyxQJR6yE8FUdANWlFr8Vh",
+				"model": "curie",
+				"training_files": [
+					{
+						"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
+						"object": "file",
+						"purpose": "fine-tune",
+						"filename": "file",
+						"bytes": 392,
+						"created_at": 1691391585,
+						"status": "processed",
+						"status_details": null
+					}
+				],
+				"validation_files": [],
+				"result_files": [],
+				"created_at": 1691391848,
+				"updated_at": 1691391848,
 				"status": "pending",
 				"fine_tuned_model": null
 			}

@@ -1,9 +1,13 @@
+from opaw.util import log
 from opaw import tool, util
 from opaw.model.chat import ChatBot
 from opaw.examples import setup
 
 # api key
 setup()
+
+# logger
+logger = log.get("function_call", "logs/function_call.log")
 
 # bot
 bot = ChatBot("gpt-3.5-turbo-0613")
@@ -17,9 +21,9 @@ response = bot.create(
 
 if bot.get_fn_call(response):
     fn_result = bot.call_function(response)
-    print(f"{company} stock price:", fn_result)
+    logger.info(f"{company} stock price: {fn_result}")
 else:
-    print("no function call")
+    logger.info("no function call")
 
 # save model history
 bot.save_history("history/chat-fn-call-hist.json")

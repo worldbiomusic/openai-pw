@@ -35,10 +35,20 @@ def filter_args(data):
     remove_args = common_args + etc_args
 
     data = copy.deepcopy(data)
-    return [{k: v for k,v in e.items() if k not in remove_args} for e in data]
+    return [{k: v for k, v in e.items() if k not in remove_args} for e in data]
+
 
 def pprint(d):
+    """
+    Pretty print
+    """
     print(pprints(d))
 
+
 def pprints(d):
+    """
+    Pretty print string
+    """
     return json.dumps(d, indent="\t")
+
+
