@@ -3,6 +3,12 @@ from opaw.model.edit import EditBot
 from opaw import util
 from opaw.examples import setup
 
+"""
+====================
+= Deprecated model =
+====================
+"""
+
 # api key
 setup()
 
