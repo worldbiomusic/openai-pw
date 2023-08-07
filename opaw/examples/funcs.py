@@ -1,7 +1,18 @@
-import opaw.tool.stock
+def stock_price(company):
+  if company == "APPL":
+    return 100
+  elif company == "GOOGL":
+    return 130
+  elif company == "TSLA":
+    return 70
+  elif company == "AMZN":
+    return 150
+  else:
+    return 0
 
-info = [
-    # stock.stock_price()
+
+funcs_meta = [
+    # stock_price()
     {
         "name": "stock_price",
         "description": "Get the stock price of a given company",
@@ -18,8 +29,9 @@ info = [
     }
 ]
 
-functions = {
-    "stock_price": stock.stock_price
+funcs = {
+    "stock_price": stock_price
 }
+
 
 

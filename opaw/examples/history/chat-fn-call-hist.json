@@ -28,13 +28,12 @@
 					]
 				}
 			}
-		],
-		"function_call": "auto"
+		]
 	},
 	{
-		"id": "chatcmpl-7koaLHfU6vCBdJlwfvhmv4DOcnkC6",
+		"id": "chatcmpl-7kqUvYzFvLbbDODnYr2MG3Q9eU5Yt",
 		"object": "chat.completion",
-		"created": 1691391893,
+		"created": 1691399245,
 		"model": "gpt-3.5-turbo-0613",
 		"choices": [
 			{
@@ -44,7 +43,7 @@
 					"content": null,
 					"function_call": {
 						"name": "stock_price",
-						"arguments": "{\n\"company\": \"AMZN\"\n}"
+						"arguments": "{\n  \"company\": \"AMZN\"\n}"
 					}
 				},
 				"finish_reason": "function_call"
@@ -52,8 +51,8 @@
 		],
 		"usage": {
 			"prompt_tokens": 81,
-			"completion_tokens": 15,
-			"total_tokens": 96
+			"completion_tokens": 16,
+			"total_tokens": 97
 		}
 	}
 ]
