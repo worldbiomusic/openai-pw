@@ -1,3 +1,6 @@
+[![PyPi](https://img.shields.io/pypi/v/opaw)](https://pypi.org/project/opaw/)
+
+
 # openai-pw
 Unofficial python wrapper of [OpenAI](https://openai.com/) API.
 
