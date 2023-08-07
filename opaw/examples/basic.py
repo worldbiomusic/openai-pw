@@ -1,21 +1,29 @@
+from time import sleep
+from opaw.util import log
 from opaw import util
 from opaw.examples import setup
 from opaw.model.chat import ChatBot
 
+# logger
+logger = log.get("basic", "logs/basic.log")
+
 def loop_chat(model="gpt-3.5-turbo",
               system_prompt="You are a helpful assistant.",
-              history_file="history"):
+              history_file="history/basic-hist.json"):
     bot = ChatBot(model)
     bot.add_message(system_prompt, role="system")
-    print("(type \"bye\" to quit.)")
+    logger.info("(type \"bye\" to quit.)")
+    sleep(0.1)  # wait for logger buffering
+
     while True:
         user_input = input("User: ")
         if "bye" in user_input:
-            print("BYE!")
+            logger.info("BYE!")
             break
         response = bot.create(user_input)
         bot_response = response["choices"][0]["message"]["content"]
-        print(f"Bot: {bot_response}\n")
+        logger.info(f"Bot: {bot_response}\n")
+        sleep(0.1)  # wait for logger buffering
 
     bot.save_history(history_file)
 

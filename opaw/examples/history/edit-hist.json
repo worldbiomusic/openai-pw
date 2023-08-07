@@ -6,7 +6,7 @@
 	},
 	{
 		"object": "edit",
-		"created": 1691332347,
+		"created": 1691391479,
 		"choices": [
 			{
 				"text": "Hey, this was my first car!!\n",
@@ -15,8 +15,8 @@
 		],
 		"usage": {
 			"prompt_tokens": 25,
-			"completion_tokens": 28,
-			"total_tokens": 53
+			"completion_tokens": 31,
+			"total_tokens": 56
 		}
 	}
 ]

@@ -1,0 +1,78 @@
+[
+	{
+		"model": "gpt-3.5-turbo",
+		"messages": [
+			{
+				"role": "system",
+				"content": "You are a helpful assistant."
+			},
+			{
+				"role": "user",
+				"content": "Who made cheese?"
+			}
+		]
+	},
+	{
+		"id": "chatcmpl-7koY8KKM9PrpA7GqzBVqgW56ASjOR",
+		"object": "chat.completion",
+		"created": 1691391756,
+		"model": "gpt-3.5-turbo-0613",
+		"choices": [
+			{
+				"index": 0,
+				"message": {
+					"role": "assistant",
+					"content": "The exact origins of cheese are not known, but it is believed that cheese was first made by accident. It is thought that ancient civilizations discovered that milk could solidify and preserve when naturally occurring rennet enzymes or bacteria were added to it. Over time, different regions developed their own methods and techniques for making cheese."
+				},
+				"finish_reason": "stop"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 21,
+			"completion_tokens": 63,
+			"total_tokens": 84
+		}
+	},
+	{
+		"model": "gpt-3.5-turbo",
+		"messages": [
+			{
+				"role": "system",
+				"content": "You are a helpful assistant."
+			},
+			{
+				"role": "user",
+				"content": "Who made cheese?"
+			},
+			{
+				"role": "assistant",
+				"content": "The exact origins of cheese are not known, but it is believed that cheese was first made by accident. It is thought that ancient civilizations discovered that milk could solidify and preserve when naturally occurring rennet enzymes or bacteria were added to it. Over time, different regions developed their own methods and techniques for making cheese."
+			},
+			{
+				"role": "user",
+				"content": "Do you like it?"
+			}
+		]
+	},
+	{
+		"id": "chatcmpl-7koYGCPD7ZvKKK3Os5IHFPqd6bsE6",
+		"object": "chat.completion",
+		"created": 1691391764,
+		"model": "gpt-3.5-turbo-0613",
+		"choices": [
+			{
+				"index": 0,
+				"message": {
+					"role": "assistant",
+					"content": "As an AI, I don't have personal preferences or the ability to taste or consume food, so I don't have an opinion on whether I like cheese or not. However, many people enjoy cheese and it is a widely popular food around the world."
+				},
+				"finish_reason": "stop"
+			}
+		],
+		"usage": {
+			"prompt_tokens": 97,
+			"completion_tokens": 51,
+			"total_tokens": 148
+		}
+	}
+]

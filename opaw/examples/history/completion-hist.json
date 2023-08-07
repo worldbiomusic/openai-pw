@@ -1,26 +1,27 @@
 [
 	{
 		"model": "text-davinci-003",
-		"prompt": "Tell some lies"
+		"prompt": "Tell some lies",
+		"max_tokens": 50
 	},
 	{
-		"id": "cmpl-7kZ5286rnFFmOlcaKoD6l5yH9b1EY",
+		"id": "cmpl-7koSlJPBz0Y4ri9D82gsGjTm8drJS",
 		"warning": "This model version is deprecated. Migrate before January 4, 2024 to avoid disruption of service. Learn more https://platform.openai.com/docs/deprecations",
 		"object": "text_completion",
-		"created": 1691332292,
+		"created": 1691391423,
 		"model": "text-davinci-003",
 		"choices": [
 			{
-				"text": "\n\n1. I once won the Nobel Prize.\n2. I can",
+				"text": "\n\n1. I just won the lottery.\n2. I'm related to Beyonce.\n3. I can speak six languages.\n4. I'm a secret agent.\n5. I have a pet unicorn.",
 				"index": 0,
 				"logprobs": null,
-				"finish_reason": "length"
+				"finish_reason": "stop"
 			}
 		],
 		"usage": {
 			"prompt_tokens": 3,
-			"completion_tokens": 16,
-			"total_tokens": 19
+			"completion_tokens": 47,
+			"total_tokens": 50
 		}
 	}
 ]
