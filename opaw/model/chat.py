@@ -1,11 +1,8 @@
 import copy
 import io
-from opaw import tool
 import json
-import opaw.tool
 import openai
 from opaw.model import bot
-from opaw import util
 
 
 class ChatBot(bot.Bot):
@@ -13,20 +10,26 @@ class ChatBot(bot.Bot):
     https://platform.openai.com/docs/api-reference/chat
     """
 
-    def __init__(self, model="gpt-3.5-turbo", messages=None):
+    def __init__(self, model="gpt-3.5-turbo", messages=None, funcs=None, funcs_meta=None):
         super().__init__(model, "chat")
         # conversations
         self.messages = [] if messages is None else messages
+        self.funcs = [] if funcs is None else funcs  # callback functions
+        self.funcs_meta = [] if funcs_meta is None else funcs_meta  # contains name, desc, params...
 
     def create(self, content=None, **kargs):
         """
         Gets a response from bot
         :param content: get a response with messages (content)
-        :param kargs: other args
+        :param kargs: other args (if call_fn is True, self.funcs_info will be passed to "functions")
         :return:
         """
         # default
         role = kargs["role"] if kargs.get("role") else "user"
+
+        if "call_fn" in kargs and kargs["call_fn"]:  # if call_fn is True
+            kargs.pop("call_fn")
+            kargs["functions"] = self.funcs_meta
 
         if content is not None:
             content = str(content)
@@ -58,7 +61,7 @@ class ChatBot(bot.Bot):
         # if function_call exist
         if fn_call:
             function_name = fn_call["name"]
-            function = tool.functions[function_name]
+            function = self.funcs[function_name]
 
             fn_args = json.loads(fn_call["arguments"])
             return function(**fn_args)
