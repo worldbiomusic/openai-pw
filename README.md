@@ -7,7 +7,7 @@ Unofficial python wrapper of [OpenAI](https://openai.com/) API.
 
 # Features
 - Wrapped models (chat, audio, image, embeddings ...)
-- History save and load
+- History(conversations) save and load
 
 
 # Quick start
