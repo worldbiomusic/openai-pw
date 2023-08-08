@@ -1,7 +1,8 @@
 import logging
-from opaw.util import mkdirs
+
 
 def get(name, file="./log.log"):
+    from opaw.util import mkdirs
     """
     Gets a logger with the given name (singleton)
     :param name: logger name
@@ -12,7 +13,6 @@ def get(name, file="./log.log"):
     if not logger.hasHandlers():
         # make parent dirs if needed
         mkdirs(file)
-
         logger.setLevel(logging.INFO)
 
         # stream handler
