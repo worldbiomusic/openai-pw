@@ -1,5 +1,6 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 
 class FinetuneBot(Bot):
@@ -7,7 +8,7 @@ class FinetuneBot(Bot):
     https://platform.openai.com/docs/api-reference/fine-tunes
     """
 
-    def __init__(self, model="curie"):
+    def __init__(self, model=util.default_models["finetune"]):
         super().__init__(model, "finetune")
 
     def create(self, _=None, **kargs):

@@ -2,27 +2,29 @@ import copy
 import io
 import json
 import openai
-from opaw.model import bot
+from opaw.model.bot import Bot
+from opaw import util
 
 
-class ChatBot(bot.Bot):
+class ChatBot(Bot):
     """
     https://platform.openai.com/docs/api-reference/chat
     """
 
-    def __init__(self, model="gpt-3.5-turbo", messages=None, funcs=None, funcs_meta=None):
+    def __init__(self, model=util.default_models["chat"],
+                 messages=None, funcs=None, funcs_meta=None):
         super().__init__(model, "chat")
         # conversations
         self.messages = [] if messages is None else messages
         self.funcs = [] if funcs is None else funcs  # callback functions
         self.funcs_meta = [] if funcs_meta is None else funcs_meta  # contains name, desc, params...
 
-    def create(self, content=None, call_fn=False, instant=False, **kargs):
+    def create(self, content=None, call_fn=False, msg_limit=-1, **kargs):
         """
         Gets a response from bot
         :param content: get a response with messages (content)
         :param call_fn: if true, function call will be enabled
-        :param instant: if true,
+        :param msg_limit: number of recent message limit (if -1, no limit)
         :param kargs: other args (if call_fn is True, self.funcs_info will be passed to "functions")
         :return:
         """
@@ -32,8 +34,12 @@ class ChatBot(bot.Bot):
         # options
         if call_fn:
             kargs["functions"] = self.funcs_meta  # pass functions meta info
-        if instant:
-            self.messages.clear()
+        if msg_limit != -1:
+            if msg_limit == 0:
+                self.messages.clear()
+            else:
+                self.messages = self.messages[-msg_limit:]
+
 
         if content is not None:
             content = str(content)
@@ -107,3 +113,4 @@ class ChatBot(bot.Bot):
         # insert last response to messages
         last_res_msg = next((self._get_res_msg(item) for item in hist[::-1] if "choices" in item), None)
         self.messages.append(last_res_msg)
+

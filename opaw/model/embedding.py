@@ -1,11 +1,12 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 class EmbeddingBot(Bot):
     """
     https://platform.openai.com/docs/api-reference/embeddings
     """
-    def __init__(self, model="text-embedding-ada-002"):
+    def __init__(self, model=util.default_models["embedding"]):
         super().__init__(model, "embedding")
 
     def create(self, input, **kargs):
