@@ -7,7 +7,7 @@ with open("README.md", encoding="utf-8") as f:
 setup(
     name='opaw',
     packages=find_packages(),
-    version='0.4.1',
+    version='0.4.2',
     license='MIT',
     description='Unofficial python wrapper of OpenAI API.',
     long_description=long_description,
