@@ -189,3 +189,4 @@ fabric.properties
 openai-api-key.txt
 test/
 logs/
+.vscode/
