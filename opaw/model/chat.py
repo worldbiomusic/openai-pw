@@ -17,19 +17,23 @@ class ChatBot(bot.Bot):
         self.funcs = [] if funcs is None else funcs  # callback functions
         self.funcs_meta = [] if funcs_meta is None else funcs_meta  # contains name, desc, params...
 
-    def create(self, content=None, **kargs):
+    def create(self, content=None, call_fn=False, instant=False, **kargs):
         """
         Gets a response from bot
         :param content: get a response with messages (content)
+        :param call_fn: if true, function call will be enabled
+        :param instant: if true,
         :param kargs: other args (if call_fn is True, self.funcs_info will be passed to "functions")
         :return:
         """
         # default
         role = kargs["role"] if kargs.get("role") else "user"
 
-        if "call_fn" in kargs and kargs["call_fn"]:  # if call_fn is True
-            kargs.pop("call_fn")
-            kargs["functions"] = self.funcs_meta
+        # options
+        if call_fn:
+            kargs["functions"] = self.funcs_meta  # pass functions meta info
+        if instant:
+            self.messages.clear()
 
         if content is not None:
             content = str(content)
