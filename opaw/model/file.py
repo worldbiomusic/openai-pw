@@ -1,5 +1,6 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 
 class FileBot(Bot):

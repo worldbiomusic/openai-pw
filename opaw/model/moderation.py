@@ -1,5 +1,6 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 
 class ModerationBot(Bot):
@@ -7,7 +8,7 @@ class ModerationBot(Bot):
     https://platform.openai.com/docs/api-reference/moderations
     """
 
-    def __init__(self, model="text-moderation-latest"):
+    def __init__(self, model=util.default_models["moderation"]):
         super().__init__(model, "moderation")
 
     def create(self, input, **kargs):

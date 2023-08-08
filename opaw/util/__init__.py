@@ -1,3 +1,4 @@
+from opaw.util import log
 import time
 import copy
 import json
@@ -6,6 +7,19 @@ from os.path import join
 from datetime import datetime
 import openai
 import traceback
+
+default_models = {
+    "chat": "gpt-3.5-turbo",
+    "completion": "text-davinci-003",
+    "image": "DALL-E",
+    "audio": "whisper-1",
+    "embedding": "text-embedding-ada-002",
+    "file": "",
+    "finetune": "curie",
+    "moderation": "text-moderation-latest",
+    "edit": "text-davinci-edit-001"
+}
+
 
 
 def setup(api_key_file="openai-api-key.txt"):

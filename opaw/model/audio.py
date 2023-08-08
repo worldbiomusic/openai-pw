@@ -1,12 +1,13 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 class AudioBot(Bot):
     """
     https://platform.openai.com/docs/api-reference/audio
     """
 
-    def __init__(self, model="whisper-1"):
+    def __init__(self, model=util.default_models["audio"]):
         super().__init__(model, "audio")
 
     def create(self, file, **kargs):

@@ -22,8 +22,8 @@ bot.add_message("You are a helpful assistant.", role="system")
 chat("What is openai?")
 chat("Then, who made it?")
 
-# if instant is True, bot don't know previous conversations (see chat-history.json for detail)
-chat("What models are made in there?", instant=True)
+# if msg_limit is 0, bot don't know previous conversation (see chat-history.json for detail)
+chat("What models are made in there?", msg_limit=0)
 
 # save history if needed
 bot.save_history("history/chat-hist.json")

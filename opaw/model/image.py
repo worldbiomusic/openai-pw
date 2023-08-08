@@ -1,5 +1,6 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 
 class ImageBot(Bot):
@@ -7,7 +8,7 @@ class ImageBot(Bot):
     https://platform.openai.com/docs/api-reference/images
     """
 
-    def __init__(self, model="DALL-E"):
+    def __init__(self, model=util.default_models["image"]):
         super().__init__(model, "image")
 
     def create(self, prompt, **kargs):

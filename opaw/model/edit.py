@@ -1,5 +1,6 @@
 import openai
 from opaw.model.bot import Bot
+from opaw import util
 
 
 class EditBot(Bot):
@@ -9,7 +10,7 @@ class EditBot(Bot):
     https://platform.openai.com/docs/api-reference/edits
     """
 
-    def __init__(self, model="text-davinci-edit-001"):
+    def __init__(self, model=util.default_models["edit"]):
         """
         Deprecated model
         """
