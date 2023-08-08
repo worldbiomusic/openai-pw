@@ -10,8 +10,8 @@ setup()
 logger = log.get("chat", "logs/chat.log")
 
 # chat
-def chat(prompt):
-    response = bot.create(prompt)
+def chat(prompt, **kargs):
+    response = bot.create(prompt, **kargs)
     res_msg = response["choices"][0]["message"]["content"]
     logger.info(f"response: {res_msg}")
 
@@ -21,6 +21,9 @@ bot.add_message("You are a helpful assistant.", role="system")
 
 chat("What is openai?")
 chat("Then, who made it?")
+
+# if instant is True, bot don't know previous conversations (see chat-history.json for detail)
+chat("What models are made in there?", instant=True)
 
 # save history if needed
 bot.save_history("history/chat-hist.json")
