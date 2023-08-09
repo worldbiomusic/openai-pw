@@ -40,7 +40,6 @@ class ChatBot(Bot):
             else:
                 self.messages = self.messages[-msg_limit:]
 
-
         if content is not None:
             content = str(content)
             self.add_message(content, role=role)

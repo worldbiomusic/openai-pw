@@ -90,3 +90,35 @@ def pprints(d):
     Pretty print string
     """
     return json.dumps(d, indent="\t")
+
+
+def func_meta(name, desc, properties, required):
+    """
+    Gets function call format with given args
+
+    :param name: function name
+    :param desc: function description
+    :param properties: [[<name>, <type>, <desc>], [...]...]
+    :param required: the required args (str list)
+    :return:
+    """
+    function = {
+        "name": name,
+        "description": desc,
+        "parameters": {
+            "type": "object",
+            "properties": {},
+            "required": required,
+        },
+    }
+
+    # add properties
+    props = function["parameters"]["properties"]
+
+    if not isinstance(properties[0], list):  # wrap with list if not nested list
+        properties = [properties]
+
+    for prop in properties:
+        props[prop[0]] = {"type": prop[1], "description": prop[2]}
+
+    return function
