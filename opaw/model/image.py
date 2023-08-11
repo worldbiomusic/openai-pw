@@ -1,3 +1,6 @@
+import base64
+import requests
+from urllib.parse import urlparse
 import openai
 from opaw.model.bot import Bot
 from opaw import util
@@ -43,8 +46,26 @@ class ImageBot(Bot):
         self._history_res(response)
         return response
 
-    def img_format(self, img):
+    def save_img(self, data, path):
         """
-        img could be url or data scheme encoded in base64
+        saves given image data to the path
+        :param data: img url or uri(data scheme)
+        :param path: the path to be saved
         """
-        return "url" if img.startswith("http") else "data"
+        util.mkdirs(path)  # create parent dirs
+        d_format = self.img_format(data)
+
+        if d_format == "url":
+            response = requests.get(data)
+            with open(path, "wb") as f:
+                f.write(response.content)
+        elif d_format == "uri":
+            with open(path, "wb") as f:
+                f.write(base64.b64decode(data))
+
+    def img_format(self, data):
+        """
+       img could be url or data scheme encoded in base64
+       """
+        parsed = urlparse(data)
+        return "url" if parsed.scheme and parsed.netloc else "uri"
