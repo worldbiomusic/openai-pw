@@ -7,15 +7,17 @@ Unofficial python wrapper of [OpenAI](https://openai.com/) API.
 
 # Features
 - Wrapped models (chat, audio, image, embeddings ...)
-- History(conversations) save and load
+- History(requests and responses) save and load to/from a file
+- Audio bot supports also [whisper](https://github.com/openai/whisper) and [whisper_timestamped](https://github.com/linto-ai/whisper-timestamped)(word-level timestamps)
+
 
 
 # Quick start
 You can also play with in [this colab](https://colab.research.google.com/drive/1nJ1-YwLMSxSVx092uBVoarvuVUyt65xC?usp=drive_link). Or
 
-1. Download `openai` and [`opaw`](https://pypi.org/project/opaw/) using pip. 
+1. Download `openai` using pip.
 ```cmd
-pip install openai opaw
+pip install opaw
 ```
 2. Create a `open-api-key.txt` file and insert [your api key](https://platform.openai.com/account/api-keys) into the file. Or set an environment variable with the name `OPENAI_API_KEY`.
 3. Write a demo code and play with ChatGPT.
@@ -29,7 +31,7 @@ loop_chat() # start chat
 
 
 # Examples
-Try to run something in [examples](opaw/examples) after downloaded this repo.
+Try to run something in [examples](opaw/examples) after downloaded this repo. (needed to run `pip install -r requirements.txt` before running examples)
 
 
 # OpenAI links
