@@ -188,5 +188,5 @@ fabric.properties
 # opaw (openai-python wrapper)
 openai-api-key.txt
 test/
-logs/
+opaw/test/
 .vscode/

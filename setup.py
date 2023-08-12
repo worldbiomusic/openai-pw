@@ -7,7 +7,7 @@ with open("README.md", encoding="utf-8") as f:
 setup(
     name='opaw',
     packages=find_packages(),
-    version='0.4.3',
+    version='0.4.4',
     license='MIT',
     description='Unofficial python wrapper of OpenAI API.',
     long_description=long_description,
@@ -16,7 +16,7 @@ setup(
     author_email='hiimanget@gmail.com',
     url='https://github.com/hiimanget/openai-pw',
     keywords=['openai', 'python', 'api', 'wrapper'],
-    install_requires=['openai'],
+    install_requires=['openai', 'openai-whisper', 'whisper_timestamped'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
