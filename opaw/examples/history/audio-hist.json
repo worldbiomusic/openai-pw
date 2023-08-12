@@ -1,18 +1,3726 @@
 [
 	{
 		"model": "whisper-1",
-		"file": "audio1.mp3",
+		"file": "radio_short.mp3"
+	},
+	{
+		"text": "375, what do you need for detail? 2 375, what do you need for detail? 2 375, what do you need for detail? La ferveur de Bettencourt, question pos\u00e9e par les leaders de la CFDT et de la CGT R\u00e9ponse de Nicolas Sarkozy, Eric Werth portera le d\u00e9bat sur les retraites On en parle dans BFM Story avec le num\u00e9ro 2 de la CFDT Et puis il y a une bataille qui a d\u00e9marr\u00e9, celle entre Marine Le Pen et Bruno Gonich La bataille de la succession de Jean-Marie Le Pen \u00e0 la t\u00eate du Front National La tourn\u00e9e de campagne de Marine Le Pen commence aujourd'hui dans le Var Marine Le Pen sera en direct dans BFM Story Restez avec nous, Marine Le Pen dans moins de 3 minutes, \u00e0 tout de suite L'actualit\u00e9 c'est aussi aujourd'hui un dernier adieu \u00e0 Laurent Fignon C'\u00e9tait au cimeti\u00e8re du P\u00e8re Lachaise \u00e0 Paris L'ancien double vainqueur du Tour de France, vaincu par le cancer \u00e0 50 ans a \u00e9t\u00e9 incin\u00e9r\u00e9 en petit comit\u00e9 aujourd'hui"
+	},
+	{
+		"file": "radio_short.mp3",
+		"name": "tiny"
+	},
+	{
+		"text": " Right now looked they didn't even look at the ground. Left right down on the table. Right on the wall. Let's be quiet. Lau, let's sit. One foot, the gas is closed. One left, the gas is removed. Right \ubd99 on the topic is left. Ldetermining body from the force, the general to the plant. Let's be quiet. Let's go. I told you closely, his ac m\u00e1quini. Somehow, he was selected as a precise bacterium. He was SM-ushed with sch\u0432asser, def\u5e08, muslim, hdlyilther \u2013 Owohohohloho! The Phs keeper is a half forehand and can't have a Blood of Immigration, but he was ingested with all that it do. This Blood counts and the fact that both suffered a short vaccinations and terminal optimum targets. In this case, He gave so much gratitude for awhile, which made a prophetic person to use. As a\u5206 doesn't \u0441\u043b\u043e\u0436\u043d\u043e, the real fact gets from the pain in the brain. Here, in\u043d\u043e\u0437i this therapy block gets rid of your blood acne. It is the nickname of my knee. In bronzhine, you use your knee, and it can never dissolve. The medicine cells have dug up from a brown division to a beautiful side. Many things has also been done in recent years, because of STR, the entire\u0433\u0440 plot of heroin operates under white plugins. When everything will be very 2, they will dilute less againstinate that czant drugs that works out seriously, and than the amount of drugs",
+		"segments": [
+			{
+				"id": 0,
+				"seek": 0,
+				"start": 0.0,
+				"end": 5.5200000000000005,
+				"text": " Right now looked they didn't even look at the ground.",
+				"tokens": [
+					50364,
+					1779,
+					586,
+					2956,
+					436,
+					994,
+					380,
+					754,
+					574,
+					412,
+					264,
+					2727,
+					13,
+					50640
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 1,
+				"seek": 0,
+				"start": 5.5200000000000005,
+				"end": 7.42,
+				"text": " Left right down on the table.",
+				"tokens": [
+					50640,
+					16405,
+					558,
+					760,
+					322,
+					264,
+					3199,
+					13,
+					50735
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 2,
+				"seek": 0,
+				"start": 7.42,
+				"end": 8.120000000000001,
+				"text": " Right on the wall.",
+				"tokens": [
+					50735,
+					1779,
+					322,
+					264,
+					2929,
+					13,
+					50770
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 3,
+				"seek": 0,
+				"start": 8.120000000000001,
+				"end": 10.02,
+				"text": " Let's be quiet.",
+				"tokens": [
+					50770,
+					961,
+					311,
+					312,
+					5677,
+					13,
+					50865
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 4,
+				"seek": 0,
+				"start": 10.02,
+				"end": 12.44,
+				"text": " Lau, let's sit.",
+				"tokens": [
+					50865,
+					47979,
+					11,
+					718,
+					311,
+					1394,
+					13,
+					50986
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 5,
+				"seek": 0,
+				"start": 12.44,
+				"end": 15.46,
+				"text": " One foot, the gas is closed.",
+				"tokens": [
+					50986,
+					1485,
+					2671,
+					11,
+					264,
+					4211,
+					307,
+					5395,
+					13,
+					51137
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 6,
+				"seek": 0,
+				"start": 15.46,
+				"end": 18.68,
+				"text": " One left, the gas is removed.",
+				"tokens": [
+					51137,
+					1485,
+					1411,
+					11,
+					264,
+					4211,
+					307,
+					7261,
+					13,
+					51298
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 7,
+				"seek": 0,
+				"start": 18.68,
+				"end": 21.62,
+				"text": " Right \ubd99 on the topic is left.",
+				"tokens": [
+					51298,
+					1779,
+					24618,
+					322,
+					264,
+					4829,
+					307,
+					1411,
+					13,
+					51445
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 8,
+				"seek": 0,
+				"start": 21.64,
+				"end": 23.46,
+				"text": " Ldetermining body from the force, the general to the plant.",
+				"tokens": [
+					51446,
+					441,
+					49136,
+					1760,
+					1772,
+					490,
+					264,
+					3464,
+					11,
+					264,
+					2674,
+					281,
+					264,
+					3709,
+					13,
+					51537
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 9,
+				"seek": 0,
+				"start": 23.46,
+				"end": 24.46,
+				"text": " Let's be quiet.",
+				"tokens": [
+					51537,
+					961,
+					311,
+					312,
+					5677,
+					13,
+					51587
+				],
+				"temperature": 1.0,
+				"avg_logprob": -3.576875,
+				"compression_ratio": 1.6538461538461537,
+				"no_speech_prob": 0.511215090751648
+			},
+			{
+				"id": 10,
+				"seek": 2446,
+				"start": 24.46,
+				"end": 30.04,
+				"text": " Let's go.",
+				"tokens": [
+					50364,
+					961,
+					311,
+					352,
+					13,
+					50643
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.565145263671875,
+				"compression_ratio": 1.28125,
+				"no_speech_prob": 0.03402078151702881
+			},
+			{
+				"id": 11,
+				"seek": 2446,
+				"start": 30.04,
+				"end": 32.120000000000005,
+				"text": " I told you closely, his ac m\u00e1quini.",
+				"tokens": [
+					50643,
+					286,
+					1907,
+					291,
+					8185,
+					11,
+					702,
+					696,
+					39701,
+					3812,
+					13,
+					50747
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.565145263671875,
+				"compression_ratio": 1.28125,
+				"no_speech_prob": 0.03402078151702881
+			},
+			{
+				"id": 12,
+				"seek": 2446,
+				"start": 32.120000000000005,
+				"end": 34.760000000000005,
+				"text": " Somehow, he was selected as a precise bacterium.",
+				"tokens": [
+					50747,
+					28357,
+					11,
+					415,
+					390,
+					8209,
+					382,
+					257,
+					13600,
+					9755,
+					2197,
+					13,
+					50879
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.565145263671875,
+				"compression_ratio": 1.28125,
+				"no_speech_prob": 0.03402078151702881
+			},
+			{
+				"id": 13,
+				"seek": 2446,
+				"start": 34.760000000000005,
+				"end": 41.44,
+				"text": " He was SM-ushed with sch\u0432asser, def\u5e08, muslim, hdlyilther \u2013 Owohohohloho!",
+				"tokens": [
+					50879,
+					634,
+					390,
+					13115,
+					12,
+					1498,
+					292,
+					365,
+					956,
+					859,
+					12129,
+					11,
+					1060,
+					29186,
+					11,
+					1038,
+					4197,
+					11,
+					276,
+					67,
+					356,
+					388,
+					616,
+					1662,
+					422,
+					6120,
+					1289,
+					1289,
+					71,
+					752,
+					1289,
+					0,
+					51213
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.565145263671875,
+				"compression_ratio": 1.28125,
+				"no_speech_prob": 0.03402078151702881
+			},
+			{
+				"id": 14,
+				"seek": 2446,
+				"start": 41.44,
+				"end": 42.08,
+				"text": " The Phs keeper is a half forehand and can't have a Blood of Immigration,",
+				"tokens": [
+					51213,
+					440,
+					2623,
+					82,
+					38709,
+					307,
+					257,
+					1922,
+					2091,
+					5543,
+					293,
+					393,
+					380,
+					362,
+					257,
+					17428,
+					295,
+					17322,
+					36045,
+					11,
+					51245
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.565145263671875,
+				"compression_ratio": 1.28125,
+				"no_speech_prob": 0.03402078151702881
+			},
+			{
+				"id": 15,
+				"seek": 2446,
+				"start": 42.08,
+				"end": 45.88,
+				"text": " but he was ingested with all that it do.",
+				"tokens": [
+					51245,
+					457,
+					415,
+					390,
+					3957,
+					21885,
+					365,
+					439,
+					300,
+					309,
+					360,
+					13,
+					51435
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.565145263671875,
+				"compression_ratio": 1.28125,
+				"no_speech_prob": 0.03402078151702881
+			},
+			{
+				"id": 16,
+				"seek": 4588,
+				"start": 46.800000000000004,
+				"end": 55.64,
+				"text": " This Blood counts and the fact that both suffered a short vaccinations and terminal optimum targets.",
+				"tokens": [
+					50410,
+					639,
+					17428,
+					14893,
+					293,
+					264,
+					1186,
+					300,
+					1293,
+					12770,
+					257,
+					2099,
+					39333,
+					293,
+					1433,
+					2071,
+					39326,
+					12911,
+					13,
+					50852
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.945965853604403,
+				"compression_ratio": 1.335,
+				"no_speech_prob": 0.36013928055763245
+			},
+			{
+				"id": 17,
+				"seek": 4588,
+				"start": 55.900000000000006,
+				"end": 60.18000000000001,
+				"text": " In this case, He gave so much gratitude for awhile,",
+				"tokens": [
+					50865,
+					682,
+					341,
+					1389,
+					11,
+					634,
+					2729,
+					370,
+					709,
+					16935,
+					337,
+					22224,
+					11,
+					51079
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.945965853604403,
+				"compression_ratio": 1.335,
+				"no_speech_prob": 0.36013928055763245
+			},
+			{
+				"id": 18,
+				"seek": 4588,
+				"start": 60.18000000000001,
+				"end": 64.66,
+				"text": " which made a prophetic person to use.",
+				"tokens": [
+					51079,
+					597,
+					1027,
+					257,
+					46174,
+					954,
+					281,
+					764,
+					13,
+					51303
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.945965853604403,
+				"compression_ratio": 1.335,
+				"no_speech_prob": 0.36013928055763245
+			},
+			{
+				"id": 19,
+				"seek": 4588,
+				"start": 64.66,
+				"end": 72.54,
+				"text": " As a\u5206 doesn't \u0441\u043b\u043e\u0436\u043d\u043e, the real fact gets from the pain in the brain.",
+				"tokens": [
+					51303,
+					1018,
+					257,
+					6627,
+					1177,
+					380,
+					41016,
+					11,
+					264,
+					957,
+					1186,
+					2170,
+					490,
+					264,
+					1822,
+					294,
+					264,
+					3567,
+					13,
+					51697
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.945965853604403,
+				"compression_ratio": 1.335,
+				"no_speech_prob": 0.36013928055763245
+			},
+			{
+				"id": 20,
+				"seek": 7254,
+				"start": 73.36,
+				"end": 77.96000000000001,
+				"text": " Here, in\u043d\u043e\u0437i",
+				"tokens": [
+					50405,
+					1692,
+					11,
+					294,
+					46773,
+					72,
+					50635
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.435390625,
+				"compression_ratio": 1.232,
+				"no_speech_prob": 0.16013763844966888
+			},
+			{
+				"id": 21,
+				"seek": 7254,
+				"start": 77.96000000000001,
+				"end": 83.22,
+				"text": " this therapy block gets rid of your blood acne.",
+				"tokens": [
+					50635,
+					341,
+					9492,
+					3461,
+					2170,
+					3973,
+					295,
+					428,
+					3390,
+					26480,
+					13,
+					50898
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.435390625,
+				"compression_ratio": 1.232,
+				"no_speech_prob": 0.16013763844966888
+			},
+			{
+				"id": 22,
+				"seek": 7254,
+				"start": 83.22,
+				"end": 85.16000000000001,
+				"text": " It is the nickname of my knee.",
+				"tokens": [
+					50898,
+					467,
+					307,
+					264,
+					21641,
+					295,
+					452,
+					9434,
+					13,
+					50995
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.435390625,
+				"compression_ratio": 1.232,
+				"no_speech_prob": 0.16013763844966888
+			},
+			{
+				"id": 23,
+				"seek": 7254,
+				"start": 85.16000000000001,
+				"end": 91.12,
+				"text": " In bronzhine, you use your knee,",
+				"tokens": [
+					50995,
+					682,
+					16586,
+					41032,
+					533,
+					11,
+					291,
+					764,
+					428,
+					9434,
+					11,
+					51293
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.435390625,
+				"compression_ratio": 1.232,
+				"no_speech_prob": 0.16013763844966888
+			},
+			{
+				"id": 24,
+				"seek": 7254,
+				"start": 91.32000000000001,
+				"end": 92.46000000000001,
+				"text": " and it can never dissolve.",
+				"tokens": [
+					51303,
+					293,
+					309,
+					393,
+					1128,
+					30150,
+					13,
+					51360
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.435390625,
+				"compression_ratio": 1.232,
+				"no_speech_prob": 0.16013763844966888
+			},
+			{
+				"id": 25,
+				"seek": 10254,
+				"start": 103.02000000000001,
+				"end": 104.46000000000001,
+				"text": " The medicine cells have dug up from a brown division",
+				"tokens": [
+					50388,
+					440,
+					7195,
+					5438,
+					362,
+					22954,
+					493,
+					490,
+					257,
+					6292,
+					10044,
+					50460
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 26,
+				"seek": 10254,
+				"start": 104.46000000000001,
+				"end": 106.54,
+				"text": " to a beautiful side.",
+				"tokens": [
+					50460,
+					281,
+					257,
+					2238,
+					1252,
+					13,
+					50564
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 27,
+				"seek": 10254,
+				"start": 106.54,
+				"end": 108.68,
+				"text": " Many things has also been done",
+				"tokens": [
+					50564,
+					5126,
+					721,
+					575,
+					611,
+					668,
+					1096,
+					50671
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 28,
+				"seek": 10254,
+				"start": 108.68,
+				"end": 110.60000000000001,
+				"text": " in recent years,",
+				"tokens": [
+					50671,
+					294,
+					5162,
+					924,
+					11,
+					50767
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 29,
+				"seek": 10254,
+				"start": 110.60000000000001,
+				"end": 113.06,
+				"text": " because of STR,",
+				"tokens": [
+					50767,
+					570,
+					295,
+					4904,
+					49,
+					11,
+					50890
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 30,
+				"seek": 10254,
+				"start": 113.06,
+				"end": 114.4,
+				"text": " the entire\u0433\u0440 plot of heroin operates",
+				"tokens": [
+					50890,
+					264,
+					2302,
+					7786,
+					7542,
+					295,
+					35551,
+					22577,
+					50957
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 31,
+				"seek": 10254,
+				"start": 114.4,
+				"end": 115.78,
+				"text": " under white plugins.",
+				"tokens": [
+					50957,
+					833,
+					2418,
+					33759,
+					13,
+					51026
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 32,
+				"seek": 10254,
+				"start": 115.78,
+				"end": 118.32000000000001,
+				"text": " When everything will be very 2,",
+				"tokens": [
+					51026,
+					1133,
+					1203,
+					486,
+					312,
+					588,
+					568,
+					11,
+					51153
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 33,
+				"seek": 10254,
+				"start": 118.32000000000001,
+				"end": 121.52000000000001,
+				"text": " they will dilute less againstinate",
+				"tokens": [
+					51153,
+					436,
+					486,
+					11504,
+					1169,
+					1570,
+					1970,
+					13923,
+					51313
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 34,
+				"seek": 10254,
+				"start": 121.52000000000001,
+				"end": 127.02000000000001,
+				"text": " that czant drugs that works out seriously,",
+				"tokens": [
+					51313,
+					300,
+					6472,
+					394,
+					7766,
+					300,
+					1985,
+					484,
+					6638,
+					11,
+					51588
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			},
+			{
+				"id": 35,
+				"seek": 10254,
+				"start": 127.02000000000001,
+				"end": 130.52,
+				"text": " and than the amount of drugs",
+				"tokens": [
+					51588,
+					293,
+					813,
+					264,
+					2372,
+					295,
+					7766,
+					51763
+				],
+				"temperature": 1.0,
+				"avg_logprob": -4.516800576067985,
+				"compression_ratio": 1.4867256637168142,
+				"no_speech_prob": 0.14200635254383087
+			}
+		],
 		"language": "en"
 	},
 	{
-		"text": "Saludos y expresiones, saludos, hola, hello, hello."
+		"file": "radio_short.mp3",
+		"name": "tiny",
+		"device": "cpu"
 	},
 	{
-		"model": "whisper-1",
-		"file": "audio1.mp3",
+		"text": " What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? What are you telling me, dude? What are you telling me, guys? What are you telling me, guys? What are you telling me, dude? What are you telling me, dude? The most important thing is not to be alert. It's what you do. Yes, man. The reference of the book. Good evening, good evening. All of you, this is your BFFM TV. It's called the BFFM story with the actuality. There are 60 minutes of the report of the analysis of the actions you need. As you can see, it's a bit of a report of the reports of the reports. So, what is it, guys? So, we are ready to do it. The report is ready to be told by the leaders of the CFT's CFT's CFT's CFT. The report of the CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's C The CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's C",
+		"segments": [
+			{
+				"id": 0,
+				"seek": 0,
+				"start": 5.0,
+				"end": 6.12,
+				"text": " What are you telling me, guys?",
+				"tokens": [
+					50364,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					1074,
+					30,
+					50664
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.343,
+				"words": [
+					{
+						"text": "What",
+						"start": 5.0,
+						"end": 5.22,
+						"confidence": 0.041
+					},
+					{
+						"text": "are",
+						"start": 5.22,
+						"end": 5.3,
+						"confidence": 0.603
+					},
+					{
+						"text": "you",
+						"start": 5.3,
+						"end": 5.46,
+						"confidence": 0.97
+					},
+					{
+						"text": "telling",
+						"start": 5.46,
+						"end": 5.7,
+						"confidence": 0.354
+					},
+					{
+						"text": "me,",
+						"start": 5.7,
+						"end": 5.94,
+						"confidence": 0.622
+					},
+					{
+						"text": "guys?",
+						"start": 6.02,
+						"end": 6.12,
+						"confidence": 0.307
+					}
+				]
+			},
+			{
+				"id": 1,
+				"seek": 0,
+				"start": 6.76,
+				"end": 7.57,
+				"text": " What are you telling me, dude?",
+				"tokens": [
+					50664,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					6449,
+					30,
+					50764
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.677,
+				"words": [
+					{
+						"text": "What",
+						"start": 6.76,
+						"end": 6.92,
+						"confidence": 0.885
+					},
+					{
+						"text": "are",
+						"start": 6.92,
+						"end": 7.06,
+						"confidence": 0.936
+					},
+					{
+						"text": "you",
+						"start": 7.06,
+						"end": 7.18,
+						"confidence": 0.993
+					},
+					{
+						"text": "telling",
+						"start": 7.18,
+						"end": 7.3,
+						"confidence": 0.905
+					},
+					{
+						"text": "me,",
+						"start": 7.3,
+						"end": 7.44,
+						"confidence": 0.984
+					},
+					{
+						"text": "dude?",
+						"start": 7.48,
+						"end": 7.57,
+						"confidence": 0.131
+					}
+				]
+			},
+			{
+				"id": 2,
+				"seek": 0,
+				"start": 7.57,
+				"end": 9.36,
+				"text": " What are you telling me, dude?",
+				"tokens": [
+					50764,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					6449,
+					30,
+					50864
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.827,
+				"words": [
+					{
+						"text": "What",
+						"start": 7.57,
+						"end": 9.12,
+						"confidence": 0.545
+					},
+					{
+						"text": "are",
+						"start": 9.12,
+						"end": 9.28,
+						"confidence": 0.851
+					},
+					{
+						"text": "you",
+						"start": 9.28,
+						"end": 9.3,
+						"confidence": 0.994
+					},
+					{
+						"text": "telling",
+						"start": 9.3,
+						"end": 9.32,
+						"confidence": 0.849
+					},
+					{
+						"text": "me,",
+						"start": 9.32,
+						"end": 9.34,
+						"confidence": 0.951
+					},
+					{
+						"text": "dude?",
+						"start": 9.34,
+						"end": 9.36,
+						"confidence": 0.857
+					}
+				]
+			},
+			{
+				"id": 3,
+				"seek": 0,
+				"start": 11.22,
+				"end": 12.5,
+				"text": " What are you telling me, dude?",
+				"tokens": [
+					50864,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					6449,
+					30,
+					50964
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.774,
+				"words": [
+					{
+						"text": "What",
+						"start": 11.22,
+						"end": 11.44,
+						"confidence": 0.422
+					},
+					{
+						"text": "are",
+						"start": 11.44,
+						"end": 11.56,
+						"confidence": 0.79
+					},
+					{
+						"text": "you",
+						"start": 11.56,
+						"end": 11.68,
+						"confidence": 0.994
+					},
+					{
+						"text": "telling",
+						"start": 11.68,
+						"end": 11.7,
+						"confidence": 0.809
+					},
+					{
+						"text": "me,",
+						"start": 11.7,
+						"end": 12.48,
+						"confidence": 0.956
+					},
+					{
+						"text": "dude?",
+						"start": 12.48,
+						"end": 12.5,
+						"confidence": 0.837
+					}
+				]
+			},
+			{
+				"id": 4,
+				"seek": 0,
+				"start": 12.5,
+				"end": 13.54,
+				"text": " What are you telling me, guys?",
+				"tokens": [
+					50964,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					1074,
+					30,
+					51164
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.762,
+				"words": [
+					{
+						"text": "What",
+						"start": 12.5,
+						"end": 12.52,
+						"confidence": 0.504
+					},
+					{
+						"text": "are",
+						"start": 12.52,
+						"end": 12.54,
+						"confidence": 0.845
+					},
+					{
+						"text": "you",
+						"start": 12.54,
+						"end": 12.64,
+						"confidence": 0.994
+					},
+					{
+						"text": "telling",
+						"start": 12.64,
+						"end": 12.66,
+						"confidence": 0.844
+					},
+					{
+						"text": "me,",
+						"start": 12.66,
+						"end": 13.04,
+						"confidence": 0.962
+					},
+					{
+						"text": "guys?",
+						"start": 13.52,
+						"end": 13.54,
+						"confidence": 0.57
+					}
+				]
+			},
+			{
+				"id": 5,
+				"seek": 0,
+				"start": 20.32,
+				"end": 21.4,
+				"text": " What are you telling me, guys?",
+				"tokens": [
+					51164,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					1074,
+					30,
+					51414
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.936,
+				"words": [
+					{
+						"text": "What",
+						"start": 20.32,
+						"end": 20.72,
+						"confidence": 0.887
+					},
+					{
+						"text": "are",
+						"start": 20.72,
+						"end": 20.78,
+						"confidence": 0.936
+					},
+					{
+						"text": "you",
+						"start": 20.78,
+						"end": 20.8,
+						"confidence": 0.996
+					},
+					{
+						"text": "telling",
+						"start": 20.8,
+						"end": 21.04,
+						"confidence": 0.934
+					},
+					{
+						"text": "me,",
+						"start": 21.04,
+						"end": 21.3,
+						"confidence": 0.897
+					},
+					{
+						"text": "guys?",
+						"start": 21.38,
+						"end": 21.4,
+						"confidence": 0.969
+					}
+				]
+			},
+			{
+				"id": 6,
+				"seek": 0,
+				"start": 22.08,
+				"end": 22.96,
+				"text": " What are you telling me, dude?",
+				"tokens": [
+					51414,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					6449,
+					30,
+					51514
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.953,
+				"words": [
+					{
+						"text": "What",
+						"start": 22.08,
+						"end": 22.24,
+						"confidence": 0.951
+					},
+					{
+						"text": "are",
+						"start": 22.24,
+						"end": 22.36,
+						"confidence": 0.966
+					},
+					{
+						"text": "you",
+						"start": 22.36,
+						"end": 22.44,
+						"confidence": 0.997
+					},
+					{
+						"text": "telling",
+						"start": 22.44,
+						"end": 22.6,
+						"confidence": 0.863
+					},
+					{
+						"text": "me,",
+						"start": 22.6,
+						"end": 22.78,
+						"confidence": 0.984
+					},
+					{
+						"text": "dude?",
+						"start": 22.94,
+						"end": 22.96,
+						"confidence": 0.967
+					}
+				]
+			},
+			{
+				"id": 7,
+				"seek": 0,
+				"start": 22.96,
+				"end": 23.08,
+				"text": " What are you telling me, dude?",
+				"tokens": [
+					51514,
+					708,
+					366,
+					291,
+					3585,
+					385,
+					11,
+					6449,
+					30,
+					51664
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.3984462458912919,
+				"compression_ratio": 4.660377358490566,
+				"no_speech_prob": 0.511215090751648,
+				"confidence": 0.856,
+				"words": [
+					{
+						"text": "What",
+						"start": 22.96,
+						"end": 22.98,
+						"confidence": 0.54
+					},
+					{
+						"text": "are",
+						"start": 22.98,
+						"end": 23.0,
+						"confidence": 0.889
+					},
+					{
+						"text": "you",
+						"start": 23.0,
+						"end": 23.02,
+						"confidence": 0.996
+					},
+					{
+						"text": "telling",
+						"start": 23.02,
+						"end": 23.04,
+						"confidence": 0.883
+					},
+					{
+						"text": "me,",
+						"start": 23.04,
+						"end": 23.06,
+						"confidence": 0.975
+					},
+					{
+						"text": "dude?",
+						"start": 23.06,
+						"end": 23.08,
+						"confidence": 0.955
+					}
+				]
+			},
+			{
+				"id": 8,
+				"seek": 2600,
+				"start": 26.54,
+				"end": 32.48,
+				"text": " The most important thing is not to be alert.",
+				"tokens": [
+					50414,
+					440,
+					881,
+					1021,
+					551,
+					307,
+					406,
+					281,
+					312,
+					9615,
+					13,
+					50664
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.276,
+				"words": [
+					{
+						"text": "The",
+						"start": 26.54,
+						"end": 31.02,
+						"confidence": 0.182
+					},
+					{
+						"text": "most",
+						"start": 31.02,
+						"end": 31.18,
+						"confidence": 0.515
+					},
+					{
+						"text": "important",
+						"start": 31.18,
+						"end": 31.5,
+						"confidence": 0.995
+					},
+					{
+						"text": "thing",
+						"start": 31.5,
+						"end": 31.68,
+						"confidence": 0.217
+					},
+					{
+						"text": "is",
+						"start": 31.68,
+						"end": 31.9,
+						"confidence": 0.506
+					},
+					{
+						"text": "not",
+						"start": 31.9,
+						"end": 32.22,
+						"confidence": 0.286
+					},
+					{
+						"text": "to",
+						"start": 32.22,
+						"end": 32.4,
+						"confidence": 0.345
+					},
+					{
+						"text": "be",
+						"start": 32.4,
+						"end": 32.42,
+						"confidence": 0.247
+					},
+					{
+						"text": "alert.",
+						"start": 32.42,
+						"end": 32.48,
+						"confidence": 0.038
+					}
+				]
+			},
+			{
+				"id": 9,
+				"seek": 2600,
+				"start": 33.42,
+				"end": 34.06,
+				"text": " It's what you do.",
+				"tokens": [
+					50664,
+					467,
+					311,
+					437,
+					291,
+					360,
+					13,
+					50764
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.503,
+				"words": [
+					{
+						"text": "It's",
+						"start": 33.42,
+						"end": 33.64,
+						"confidence": 0.307
+					},
+					{
+						"text": "what",
+						"start": 33.64,
+						"end": 33.72,
+						"confidence": 0.617
+					},
+					{
+						"text": "you",
+						"start": 33.72,
+						"end": 33.88,
+						"confidence": 0.898
+					},
+					{
+						"text": "do.",
+						"start": 33.88,
+						"end": 34.06,
+						"confidence": 0.615
+					}
+				]
+			},
+			{
+				"id": 10,
+				"seek": 2600,
+				"start": 34.86,
+				"end": 35.5,
+				"text": " Yes, man.",
+				"tokens": [
+					50764,
+					1079,
+					11,
+					587,
+					13,
+					50864
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.089,
+				"words": [
+					{
+						"text": "Yes,",
+						"start": 34.86,
+						"end": 34.88,
+						"confidence": 0.066
+					},
+					{
+						"text": "man.",
+						"start": 35.48,
+						"end": 35.5,
+						"confidence": 0.121
+					}
+				]
+			},
+			{
+				"id": 11,
+				"seek": 2600,
+				"start": 37.14,
+				"end": 38.64,
+				"text": " The reference of the book.",
+				"tokens": [
+					50864,
+					440,
+					6408,
+					295,
+					264,
+					1446,
+					13,
+					51014
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.268,
+				"words": [
+					{
+						"text": "The",
+						"start": 37.14,
+						"end": 37.28,
+						"confidence": 0.386
+					},
+					{
+						"text": "reference",
+						"start": 37.28,
+						"end": 37.74,
+						"confidence": 0.542
+					},
+					{
+						"text": "of",
+						"start": 37.74,
+						"end": 37.92,
+						"confidence": 0.781
+					},
+					{
+						"text": "the",
+						"start": 37.92,
+						"end": 38.2,
+						"confidence": 0.37
+					},
+					{
+						"text": "book.",
+						"start": 38.2,
+						"end": 38.64,
+						"confidence": 0.023
+					}
+				]
+			},
+			{
+				"id": 12,
+				"seek": 2600,
+				"start": 44.94,
+				"end": 45.65,
+				"text": " Good evening, good evening.",
+				"tokens": [
+					51264,
+					2205,
+					5634,
+					11,
+					665,
+					5634,
+					13,
+					51364
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.398,
+				"words": [
+					{
+						"text": "Good",
+						"start": 44.94,
+						"end": 45.16,
+						"confidence": 0.134
+					},
+					{
+						"text": "evening,",
+						"start": 45.16,
+						"end": 45.4,
+						"confidence": 0.782
+					},
+					{
+						"text": "good",
+						"start": 45.46,
+						"end": 45.58,
+						"confidence": 0.327
+					},
+					{
+						"text": "evening.",
+						"start": 45.58,
+						"end": 45.65,
+						"confidence": 0.73
+					}
+				]
+			},
+			{
+				"id": 13,
+				"seek": 2600,
+				"start": 45.65,
+				"end": 47.76,
+				"text": " All of you, this is your BFFM TV.",
+				"tokens": [
+					51364,
+					1057,
+					295,
+					291,
+					11,
+					341,
+					307,
+					428,
+					363,
+					6345,
+					44,
+					3558,
+					13,
+					51464
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.328,
+				"words": [
+					{
+						"text": "All",
+						"start": 45.65,
+						"end": 46.28,
+						"confidence": 0.146
+					},
+					{
+						"text": "of",
+						"start": 46.28,
+						"end": 46.3,
+						"confidence": 0.356
+					},
+					{
+						"text": "you,",
+						"start": 46.3,
+						"end": 46.5,
+						"confidence": 0.954
+					},
+					{
+						"text": "this",
+						"start": 46.54,
+						"end": 46.68,
+						"confidence": 0.226
+					},
+					{
+						"text": "is",
+						"start": 46.68,
+						"end": 46.82,
+						"confidence": 0.255
+					},
+					{
+						"text": "your",
+						"start": 46.82,
+						"end": 47.08,
+						"confidence": 0.184
+					},
+					{
+						"text": "BFFM",
+						"start": 47.08,
+						"end": 47.62,
+						"confidence": 0.327
+					},
+					{
+						"text": "TV.",
+						"start": 47.62,
+						"end": 47.76,
+						"confidence": 0.773
+					}
+				]
+			},
+			{
+				"id": 14,
+				"seek": 2600,
+				"start": 47.76,
+				"end": 51.42,
+				"text": " It's called the BFFM story with the actuality.",
+				"tokens": [
+					51464,
+					467,
+					311,
+					1219,
+					264,
+					363,
+					6345,
+					44,
+					1657,
+					365,
+					264,
+					3539,
+					507,
+					13,
+					51664
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.9190365516976134,
+				"compression_ratio": 1.3594771241830066,
+				"no_speech_prob": 0.09136588126420975,
+				"confidence": 0.385,
+				"words": [
+					{
+						"text": "It's",
+						"start": 47.76,
+						"end": 48.22,
+						"confidence": 0.351
+					},
+					{
+						"text": "called",
+						"start": 48.22,
+						"end": 48.38,
+						"confidence": 0.214
+					},
+					{
+						"text": "the",
+						"start": 48.38,
+						"end": 48.72,
+						"confidence": 0.207
+					},
+					{
+						"text": "BFFM",
+						"start": 48.72,
+						"end": 49.8,
+						"confidence": 0.85
+					},
+					{
+						"text": "story",
+						"start": 49.8,
+						"end": 50.06,
+						"confidence": 0.466
+					},
+					{
+						"text": "with",
+						"start": 50.06,
+						"end": 50.22,
+						"confidence": 0.363
+					},
+					{
+						"text": "the",
+						"start": 50.22,
+						"end": 50.66,
+						"confidence": 0.179
+					},
+					{
+						"text": "actuality.",
+						"start": 50.66,
+						"end": 51.42,
+						"confidence": 0.324
+					}
+				]
+			},
+			{
+				"id": 15,
+				"seek": 5200,
+				"start": 52.0,
+				"end": 56.02,
+				"text": " There are 60 minutes of the report of the analysis of the actions you need.",
+				"tokens": [
+					50364,
+					821,
+					366,
+					4060,
+					2077,
+					295,
+					264,
+					2275,
+					295,
+					264,
+					5215,
+					295,
+					264,
+					5909,
+					291,
+					643,
+					13,
+					50564
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.4927682834201389,
+				"compression_ratio": 3.419753086419753,
+				"no_speech_prob": 0.26298341155052185,
+				"confidence": 0.299,
+				"words": [
+					{
+						"text": "There",
+						"start": 52.0,
+						"end": 52.16,
+						"confidence": 0.087
+					},
+					{
+						"text": "are",
+						"start": 52.16,
+						"end": 52.3,
+						"confidence": 0.681
+					},
+					{
+						"text": "60",
+						"start": 52.3,
+						"end": 52.7,
+						"confidence": 0.197
+					},
+					{
+						"text": "minutes",
+						"start": 52.7,
+						"end": 53.12,
+						"confidence": 0.803
+					},
+					{
+						"text": "of",
+						"start": 53.12,
+						"end": 53.74,
+						"confidence": 0.218
+					},
+					{
+						"text": "the",
+						"start": 53.74,
+						"end": 53.86,
+						"confidence": 0.161
+					},
+					{
+						"text": "report",
+						"start": 53.86,
+						"end": 54.16,
+						"confidence": 0.072
+					},
+					{
+						"text": "of",
+						"start": 54.16,
+						"end": 54.4,
+						"confidence": 0.56
+					},
+					{
+						"text": "the",
+						"start": 54.4,
+						"end": 54.52,
+						"confidence": 0.587
+					},
+					{
+						"text": "analysis",
+						"start": 54.52,
+						"end": 54.7,
+						"confidence": 0.127
+					},
+					{
+						"text": "of",
+						"start": 54.7,
+						"end": 54.82,
+						"confidence": 0.837
+					},
+					{
+						"text": "the",
+						"start": 54.82,
+						"end": 55.22,
+						"confidence": 0.552
+					},
+					{
+						"text": "actions",
+						"start": 55.22,
+						"end": 55.24,
+						"confidence": 0.321
+					},
+					{
+						"text": "you",
+						"start": 55.24,
+						"end": 55.66,
+						"confidence": 0.559
+					},
+					{
+						"text": "need.",
+						"start": 55.66,
+						"end": 56.02,
+						"confidence": 0.163
+					}
+				]
+			},
+			{
+				"id": 16,
+				"seek": 5200,
+				"start": 56.7,
+				"end": 59.8,
+				"text": " As you can see, it's a bit of a report of the reports of the reports.",
+				"tokens": [
+					50564,
+					1018,
+					291,
+					393,
+					536,
+					11,
+					309,
+					311,
+					257,
+					857,
+					295,
+					257,
+					2275,
+					295,
+					264,
+					7122,
+					295,
+					264,
+					7122,
+					13,
+					50764
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.4927682834201389,
+				"compression_ratio": 3.419753086419753,
+				"no_speech_prob": 0.26298341155052185,
+				"confidence": 0.287,
+				"words": [
+					{
+						"text": "As",
+						"start": 56.7,
+						"end": 56.9,
+						"confidence": 0.29
+					},
+					{
+						"text": "you",
+						"start": 56.9,
+						"end": 56.96,
+						"confidence": 0.158
+					},
+					{
+						"text": "can",
+						"start": 56.96,
+						"end": 57.34,
+						"confidence": 0.267
+					},
+					{
+						"text": "see,",
+						"start": 57.34,
+						"end": 57.36,
+						"confidence": 0.922
+					},
+					{
+						"text": "it's",
+						"start": 57.64,
+						"end": 57.66,
+						"confidence": 0.309
+					},
+					{
+						"text": "a",
+						"start": 57.66,
+						"end": 57.68,
+						"confidence": 0.456
+					},
+					{
+						"text": "bit",
+						"start": 57.68,
+						"end": 57.7,
+						"confidence": 0.49
+					},
+					{
+						"text": "of",
+						"start": 57.7,
+						"end": 57.96,
+						"confidence": 0.106
+					},
+					{
+						"text": "a",
+						"start": 57.96,
+						"end": 58.1,
+						"confidence": 0.445
+					},
+					{
+						"text": "report",
+						"start": 58.1,
+						"end": 59.06,
+						"confidence": 0.058
+					},
+					{
+						"text": "of",
+						"start": 59.06,
+						"end": 59.32,
+						"confidence": 0.53
+					},
+					{
+						"text": "the",
+						"start": 59.32,
+						"end": 59.46,
+						"confidence": 0.708
+					},
+					{
+						"text": "reports",
+						"start": 59.46,
+						"end": 59.72,
+						"confidence": 0.095
+					},
+					{
+						"text": "of",
+						"start": 59.72,
+						"end": 59.76,
+						"confidence": 0.291
+					},
+					{
+						"text": "the",
+						"start": 59.76,
+						"end": 59.78,
+						"confidence": 0.744
+					},
+					{
+						"text": "reports.",
+						"start": 59.78,
+						"end": 59.8,
+						"confidence": 0.122
+					}
+				]
+			},
+			{
+				"id": 17,
+				"seek": 5200,
+				"start": 59.8,
+				"end": 60.62,
+				"text": " So, what is it, guys?",
+				"tokens": [
+					50764,
+					407,
+					11,
+					437,
+					307,
+					309,
+					11,
+					1074,
+					30,
+					50814
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.4927682834201389,
+				"compression_ratio": 3.419753086419753,
+				"no_speech_prob": 0.26298341155052185,
+				"confidence": 0.234,
+				"words": [
+					{
+						"text": "So,",
+						"start": 59.8,
+						"end": 60.02,
+						"confidence": 0.153
+					},
+					{
+						"text": "what",
+						"start": 60.18,
+						"end": 60.2,
+						"confidence": 0.267
+					},
+					{
+						"text": "is",
+						"start": 60.2,
+						"end": 60.42,
+						"confidence": 0.339
+					},
+					{
+						"text": "it,",
+						"start": 60.42,
+						"end": 60.58,
+						"confidence": 0.189
+					},
+					{
+						"text": "guys?",
+						"start": 60.58,
+						"end": 60.62,
+						"confidence": 0.265
+					}
+				]
+			},
+			{
+				"id": 18,
+				"seek": 5200,
+				"start": 60.62,
+				"end": 62.98,
+				"text": " So, we are ready to do it.",
+				"tokens": [
+					50814,
+					407,
+					11,
+					321,
+					366,
+					1919,
+					281,
+					360,
+					309,
+					13,
+					50914
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.4927682834201389,
+				"compression_ratio": 3.419753086419753,
+				"no_speech_prob": 0.26298341155052185,
+				"confidence": 0.393,
+				"words": [
+					{
+						"text": "So,",
+						"start": 60.62,
+						"end": 62.06,
+						"confidence": 0.172
+					},
+					{
+						"text": "we",
+						"start": 62.08,
+						"end": 62.26,
+						"confidence": 0.361
+					},
+					{
+						"text": "are",
+						"start": 62.26,
+						"end": 62.44,
+						"confidence": 0.246
+					},
+					{
+						"text": "ready",
+						"start": 62.44,
+						"end": 62.68,
+						"confidence": 0.474
+					},
+					{
+						"text": "to",
+						"start": 62.68,
+						"end": 62.7,
+						"confidence": 0.887
+					},
+					{
+						"text": "do",
+						"start": 62.7,
+						"end": 62.92,
+						"confidence": 0.588
+					},
+					{
+						"text": "it.",
+						"start": 62.92,
+						"end": 62.98,
+						"confidence": 0.381
+					}
+				]
+			},
+			{
+				"id": 19,
+				"seek": 5200,
+				"start": 63.0,
+				"end": 66.94,
+				"text": " The report is ready to be told by the leaders of the CFT's CFT's CFT's CFT.",
+				"tokens": [
+					50914,
+					440,
+					2275,
+					307,
+					1919,
+					281,
+					312,
+					1907,
+					538,
+					264,
+					3523,
+					295,
+					264,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					13,
+					51114
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.4927682834201389,
+				"compression_ratio": 3.419753086419753,
+				"no_speech_prob": 0.26298341155052185,
+				"confidence": 0.35,
+				"words": [
+					{
+						"text": "The",
+						"start": 63.0,
+						"end": 63.44,
+						"confidence": 0.495
+					},
+					{
+						"text": "report",
+						"start": 63.44,
+						"end": 63.46,
+						"confidence": 0.388
+					},
+					{
+						"text": "is",
+						"start": 63.46,
+						"end": 63.62,
+						"confidence": 0.523
+					},
+					{
+						"text": "ready",
+						"start": 63.62,
+						"end": 63.88,
+						"confidence": 0.056
+					},
+					{
+						"text": "to",
+						"start": 63.88,
+						"end": 64.26,
+						"confidence": 0.457
+					},
+					{
+						"text": "be",
+						"start": 64.26,
+						"end": 64.68,
+						"confidence": 0.209
+					},
+					{
+						"text": "told",
+						"start": 64.68,
+						"end": 64.7,
+						"confidence": 0.047
+					},
+					{
+						"text": "by",
+						"start": 64.7,
+						"end": 65.04,
+						"confidence": 0.645
+					},
+					{
+						"text": "the",
+						"start": 65.04,
+						"end": 65.08,
+						"confidence": 0.891
+					},
+					{
+						"text": "leaders",
+						"start": 65.08,
+						"end": 65.46,
+						"confidence": 0.57
+					},
+					{
+						"text": "of",
+						"start": 65.46,
+						"end": 65.94,
+						"confidence": 0.834
+					},
+					{
+						"text": "the",
+						"start": 65.94,
+						"end": 66.02,
+						"confidence": 0.74
+					},
+					{
+						"text": "CFT's",
+						"start": 66.02,
+						"end": 66.36,
+						"confidence": 0.098
+					},
+					{
+						"text": "CFT's",
+						"start": 66.36,
+						"end": 66.62,
+						"confidence": 0.406
+					},
+					{
+						"text": "CFT's",
+						"start": 66.62,
+						"end": 66.64,
+						"confidence": 0.509
+					},
+					{
+						"text": "CFT.",
+						"start": 66.64,
+						"end": 66.94,
+						"confidence": 0.875
+					}
+				]
+			},
+			{
+				"id": 20,
+				"seek": 6700,
+				"start": 67.0,
+				"end": 97.0,
+				"text": " The report of the CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's C",
+				"tokens": [
+					50364,
+					440,
+					2275,
+					295,
+					264,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.0975215210508338,
+				"compression_ratio": 13.264705882352942,
+				"no_speech_prob": 0.7758840322494507,
+				"confidence": 0.908,
+				"words": [
+					{
+						"text": "The",
+						"start": 67.0,
+						"end": 67.84,
+						"confidence": 0.342
+					},
+					{
+						"text": "report",
+						"start": 67.84,
+						"end": 67.86,
+						"confidence": 0.625
+					},
+					{
+						"text": "of",
+						"start": 67.86,
+						"end": 68.16,
+						"confidence": 0.374
+					},
+					{
+						"text": "the",
+						"start": 68.16,
+						"end": 68.36,
+						"confidence": 0.866
+					},
+					{
+						"text": "CFT's",
+						"start": 68.36,
+						"end": 68.68,
+						"confidence": 0.859
+					},
+					{
+						"text": "CFT's",
+						"start": 68.68,
+						"end": 68.9,
+						"confidence": 0.846
+					},
+					{
+						"text": "CFT's",
+						"start": 68.9,
+						"end": 68.94,
+						"confidence": 0.817
+					},
+					{
+						"text": "CFT's",
+						"start": 68.94,
+						"end": 69.04,
+						"confidence": 0.815
+					},
+					{
+						"text": "CFT's",
+						"start": 69.04,
+						"end": 69.24,
+						"confidence": 0.829
+					},
+					{
+						"text": "CFT's",
+						"start": 69.24,
+						"end": 69.64,
+						"confidence": 0.852
+					},
+					{
+						"text": "CFT's",
+						"start": 69.64,
+						"end": 69.88,
+						"confidence": 0.881
+					},
+					{
+						"text": "CFT's",
+						"start": 69.88,
+						"end": 70.34,
+						"confidence": 0.889
+					},
+					{
+						"text": "CFT's",
+						"start": 70.34,
+						"end": 70.92,
+						"confidence": 0.899
+					},
+					{
+						"text": "CFT's",
+						"start": 70.92,
+						"end": 71.62,
+						"confidence": 0.9
+					},
+					{
+						"text": "CFT's",
+						"start": 71.62,
+						"end": 73.26,
+						"confidence": 0.897
+					},
+					{
+						"text": "CFT's",
+						"start": 73.26,
+						"end": 74.0,
+						"confidence": 0.9
+					},
+					{
+						"text": "CFT's",
+						"start": 74.0,
+						"end": 74.4,
+						"confidence": 0.899
+					},
+					{
+						"text": "CFT's",
+						"start": 74.4,
+						"end": 74.96,
+						"confidence": 0.902
+					},
+					{
+						"text": "CFT's",
+						"start": 74.96,
+						"end": 76.3,
+						"confidence": 0.905
+					},
+					{
+						"text": "CFT's",
+						"start": 76.3,
+						"end": 76.32,
+						"confidence": 0.902
+					},
+					{
+						"text": "CFT's",
+						"start": 76.32,
+						"end": 76.38,
+						"confidence": 0.9
+					},
+					{
+						"text": "CFT's",
+						"start": 76.38,
+						"end": 76.5,
+						"confidence": 0.904
+					},
+					{
+						"text": "CFT's",
+						"start": 76.5,
+						"end": 77.4,
+						"confidence": 0.9
+					},
+					{
+						"text": "CFT's",
+						"start": 77.4,
+						"end": 77.42,
+						"confidence": 0.901
+					},
+					{
+						"text": "CFT's",
+						"start": 77.42,
+						"end": 78.0,
+						"confidence": 0.9
+					},
+					{
+						"text": "CFT's",
+						"start": 78.0,
+						"end": 78.02,
+						"confidence": 0.899
+					},
+					{
+						"text": "CFT's",
+						"start": 78.02,
+						"end": 78.06,
+						"confidence": 0.902
+					},
+					{
+						"text": "CFT's",
+						"start": 78.06,
+						"end": 78.08,
+						"confidence": 0.904
+					},
+					{
+						"text": "CFT's",
+						"start": 78.08,
+						"end": 78.1,
+						"confidence": 0.903
+					},
+					{
+						"text": "CFT's",
+						"start": 78.1,
+						"end": 78.98,
+						"confidence": 0.904
+					},
+					{
+						"text": "CFT's",
+						"start": 78.98,
+						"end": 79.24,
+						"confidence": 0.903
+					},
+					{
+						"text": "CFT's",
+						"start": 79.24,
+						"end": 81.7,
+						"confidence": 0.906
+					},
+					{
+						"text": "CFT's",
+						"start": 81.7,
+						"end": 81.72,
+						"confidence": 0.906
+					},
+					{
+						"text": "CFT's",
+						"start": 81.72,
+						"end": 81.94,
+						"confidence": 0.91
+					},
+					{
+						"text": "CFT's",
+						"start": 81.94,
+						"end": 82.32,
+						"confidence": 0.916
+					},
+					{
+						"text": "CFT's",
+						"start": 82.32,
+						"end": 82.34,
+						"confidence": 0.916
+					},
+					{
+						"text": "CFT's",
+						"start": 82.34,
+						"end": 82.36,
+						"confidence": 0.917
+					},
+					{
+						"text": "CFT's",
+						"start": 82.36,
+						"end": 82.44,
+						"confidence": 0.92
+					},
+					{
+						"text": "CFT's",
+						"start": 82.44,
+						"end": 82.54,
+						"confidence": 0.919
+					},
+					{
+						"text": "CFT's",
+						"start": 82.54,
+						"end": 82.56,
+						"confidence": 0.923
+					},
+					{
+						"text": "CFT's",
+						"start": 82.56,
+						"end": 82.58,
+						"confidence": 0.922
+					},
+					{
+						"text": "CFT's",
+						"start": 82.58,
+						"end": 82.6,
+						"confidence": 0.923
+					},
+					{
+						"text": "CFT's",
+						"start": 82.6,
+						"end": 82.62,
+						"confidence": 0.927
+					},
+					{
+						"text": "CFT's",
+						"start": 82.62,
+						"end": 82.68,
+						"confidence": 0.927
+					},
+					{
+						"text": "CFT's",
+						"start": 82.68,
+						"end": 83.12,
+						"confidence": 0.931
+					},
+					{
+						"text": "CFT's",
+						"start": 83.12,
+						"end": 83.24,
+						"confidence": 0.933
+					},
+					{
+						"text": "CFT's",
+						"start": 83.24,
+						"end": 83.44,
+						"confidence": 0.93
+					},
+					{
+						"text": "CFT's",
+						"start": 83.44,
+						"end": 83.46,
+						"confidence": 0.935
+					},
+					{
+						"text": "CFT's",
+						"start": 83.46,
+						"end": 83.48,
+						"confidence": 0.933
+					},
+					{
+						"text": "CFT's",
+						"start": 83.48,
+						"end": 83.54,
+						"confidence": 0.936
+					},
+					{
+						"text": "CFT's",
+						"start": 83.54,
+						"end": 83.7,
+						"confidence": 0.938
+					},
+					{
+						"text": "CFT's",
+						"start": 83.7,
+						"end": 83.72,
+						"confidence": 0.94
+					},
+					{
+						"text": "CFT's",
+						"start": 83.72,
+						"end": 83.74,
+						"confidence": 0.942
+					},
+					{
+						"text": "CFT's",
+						"start": 83.74,
+						"end": 83.76,
+						"confidence": 0.94
+					},
+					{
+						"text": "CFT's",
+						"start": 83.76,
+						"end": 84.02,
+						"confidence": 0.947
+					},
+					{
+						"text": "CFT's",
+						"start": 84.02,
+						"end": 84.04,
+						"confidence": 0.945
+					},
+					{
+						"text": "CFT's",
+						"start": 84.04,
+						"end": 84.28,
+						"confidence": 0.948
+					},
+					{
+						"text": "CFT's",
+						"start": 84.28,
+						"end": 84.4,
+						"confidence": 0.948
+					},
+					{
+						"text": "CFT's",
+						"start": 84.4,
+						"end": 84.54,
+						"confidence": 0.952
+					},
+					{
+						"text": "CFT's",
+						"start": 84.54,
+						"end": 84.56,
+						"confidence": 0.954
+					},
+					{
+						"text": "CFT's",
+						"start": 84.56,
+						"end": 84.58,
+						"confidence": 0.956
+					},
+					{
+						"text": "CFT's",
+						"start": 84.58,
+						"end": 85.02,
+						"confidence": 0.954
+					},
+					{
+						"text": "CFT's",
+						"start": 85.02,
+						"end": 85.98,
+						"confidence": 0.955
+					},
+					{
+						"text": "CFT's",
+						"start": 85.98,
+						"end": 86.62,
+						"confidence": 0.954
+					},
+					{
+						"text": "CFT's",
+						"start": 86.62,
+						"end": 86.8,
+						"confidence": 0.952
+					},
+					{
+						"text": "CFT's",
+						"start": 86.8,
+						"end": 87.28,
+						"confidence": 0.95
+					},
+					{
+						"text": "CFT's",
+						"start": 87.28,
+						"end": 87.58,
+						"confidence": 0.953
+					},
+					{
+						"text": "CFT's",
+						"start": 87.58,
+						"end": 87.66,
+						"confidence": 0.951
+					},
+					{
+						"text": "CFT's",
+						"start": 87.66,
+						"end": 87.68,
+						"confidence": 0.952
+					},
+					{
+						"text": "CFT's",
+						"start": 87.68,
+						"end": 87.7,
+						"confidence": 0.953
+					},
+					{
+						"text": "CFT's",
+						"start": 87.7,
+						"end": 88.84,
+						"confidence": 0.949
+					},
+					{
+						"text": "CFT's",
+						"start": 88.84,
+						"end": 88.86,
+						"confidence": 0.949
+					},
+					{
+						"text": "CFT's",
+						"start": 88.86,
+						"end": 89.74,
+						"confidence": 0.95
+					},
+					{
+						"text": "CFT's",
+						"start": 89.74,
+						"end": 90.42,
+						"confidence": 0.954
+					},
+					{
+						"text": "CFT's",
+						"start": 90.42,
+						"end": 90.82,
+						"confidence": 0.951
+					},
+					{
+						"text": "CFT's",
+						"start": 90.82,
+						"end": 96.98,
+						"confidence": 0.95
+					},
+					{
+						"text": "C",
+						"start": 96.98,
+						"end": 97.0,
+						"confidence": 0.974
+					}
+				]
+			},
+			{
+				"id": 21,
+				"seek": 9700,
+				"start": 97.0,
+				"end": 127.0,
+				"text": " The CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's CFT's C",
+				"tokens": [
+					50364,
+					440,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383,
+					25469,
+					311,
+					383
+				],
+				"temperature": 0.0,
+				"avg_logprob": -0.04619292186514679,
+				"compression_ratio": 21.095238095238095,
+				"no_speech_prob": 0.18106459081172943,
+				"confidence": 0.955,
+				"words": [
+					{
+						"text": "The",
+						"start": 97.0,
+						"end": 97.94,
+						"confidence": 0.244
+					},
+					{
+						"text": "CFT's",
+						"start": 97.94,
+						"end": 97.96,
+						"confidence": 0.473
+					},
+					{
+						"text": "CFT's",
+						"start": 97.96,
+						"end": 99.74,
+						"confidence": 0.915
+					},
+					{
+						"text": "CFT's",
+						"start": 99.74,
+						"end": 102.98,
+						"confidence": 0.915
+					},
+					{
+						"text": "CFT's",
+						"start": 102.98,
+						"end": 104.02,
+						"confidence": 0.918
+					},
+					{
+						"text": "CFT's",
+						"start": 104.02,
+						"end": 104.12,
+						"confidence": 0.929
+					},
+					{
+						"text": "CFT's",
+						"start": 104.12,
+						"end": 104.28,
+						"confidence": 0.94
+					},
+					{
+						"text": "CFT's",
+						"start": 104.28,
+						"end": 104.3,
+						"confidence": 0.95
+					},
+					{
+						"text": "CFT's",
+						"start": 104.3,
+						"end": 104.82,
+						"confidence": 0.96
+					},
+					{
+						"text": "CFT's",
+						"start": 104.82,
+						"end": 105.08,
+						"confidence": 0.965
+					},
+					{
+						"text": "CFT's",
+						"start": 105.08,
+						"end": 105.94,
+						"confidence": 0.967
+					},
+					{
+						"text": "CFT's",
+						"start": 105.94,
+						"end": 106.88,
+						"confidence": 0.969
+					},
+					{
+						"text": "CFT's",
+						"start": 106.88,
+						"end": 108.96,
+						"confidence": 0.97
+					},
+					{
+						"text": "CFT's",
+						"start": 108.96,
+						"end": 108.98,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 108.98,
+						"end": 109.06,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 109.06,
+						"end": 109.7,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 109.7,
+						"end": 109.72,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 109.72,
+						"end": 110.12,
+						"confidence": 0.97
+					},
+					{
+						"text": "CFT's",
+						"start": 110.12,
+						"end": 110.38,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 110.38,
+						"end": 110.4,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 110.4,
+						"end": 110.42,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 110.42,
+						"end": 110.44,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 110.44,
+						"end": 110.78,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 110.78,
+						"end": 110.8,
+						"confidence": 0.972
+					},
+					{
+						"text": "CFT's",
+						"start": 110.8,
+						"end": 111.54,
+						"confidence": 0.972
+					},
+					{
+						"text": "CFT's",
+						"start": 111.54,
+						"end": 111.76,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 111.76,
+						"end": 111.78,
+						"confidence": 0.971
+					},
+					{
+						"text": "CFT's",
+						"start": 111.78,
+						"end": 111.8,
+						"confidence": 0.972
+					},
+					{
+						"text": "CFT's",
+						"start": 111.8,
+						"end": 111.82,
+						"confidence": 0.972
+					},
+					{
+						"text": "CFT's",
+						"start": 111.82,
+						"end": 111.84,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 111.84,
+						"end": 111.86,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 111.86,
+						"end": 111.88,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 111.88,
+						"end": 111.9,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 111.9,
+						"end": 111.92,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 111.92,
+						"end": 111.94,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 111.94,
+						"end": 111.96,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 111.96,
+						"end": 111.98,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 111.98,
+						"end": 112.0,
+						"confidence": 0.976
+					},
+					{
+						"text": "CFT's",
+						"start": 112.0,
+						"end": 112.02,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 112.02,
+						"end": 112.04,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 112.04,
+						"end": 112.58,
+						"confidence": 0.977
+					},
+					{
+						"text": "CFT's",
+						"start": 112.58,
+						"end": 112.76,
+						"confidence": 0.976
+					},
+					{
+						"text": "CFT's",
+						"start": 112.76,
+						"end": 112.78,
+						"confidence": 0.978
+					},
+					{
+						"text": "CFT's",
+						"start": 112.78,
+						"end": 112.8,
+						"confidence": 0.978
+					},
+					{
+						"text": "CFT's",
+						"start": 112.8,
+						"end": 112.82,
+						"confidence": 0.977
+					},
+					{
+						"text": "CFT's",
+						"start": 112.82,
+						"end": 112.84,
+						"confidence": 0.979
+					},
+					{
+						"text": "CFT's",
+						"start": 112.84,
+						"end": 112.86,
+						"confidence": 0.978
+					},
+					{
+						"text": "CFT's",
+						"start": 112.86,
+						"end": 112.92,
+						"confidence": 0.978
+					},
+					{
+						"text": "CFT's",
+						"start": 112.92,
+						"end": 112.94,
+						"confidence": 0.979
+					},
+					{
+						"text": "CFT's",
+						"start": 112.94,
+						"end": 112.96,
+						"confidence": 0.978
+					},
+					{
+						"text": "CFT's",
+						"start": 112.96,
+						"end": 113.2,
+						"confidence": 0.978
+					},
+					{
+						"text": "CFT's",
+						"start": 113.2,
+						"end": 113.22,
+						"confidence": 0.977
+					},
+					{
+						"text": "CFT's",
+						"start": 113.22,
+						"end": 114.64,
+						"confidence": 0.979
+					},
+					{
+						"text": "CFT's",
+						"start": 114.64,
+						"end": 114.66,
+						"confidence": 0.977
+					},
+					{
+						"text": "CFT's",
+						"start": 114.66,
+						"end": 115.04,
+						"confidence": 0.977
+					},
+					{
+						"text": "CFT's",
+						"start": 115.04,
+						"end": 115.86,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 115.86,
+						"end": 116.02,
+						"confidence": 0.976
+					},
+					{
+						"text": "CFT's",
+						"start": 116.02,
+						"end": 118.04,
+						"confidence": 0.976
+					},
+					{
+						"text": "CFT's",
+						"start": 118.04,
+						"end": 118.24,
+						"confidence": 0.976
+					},
+					{
+						"text": "CFT's",
+						"start": 118.24,
+						"end": 120.92,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 120.92,
+						"end": 120.94,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 120.94,
+						"end": 121.06,
+						"confidence": 0.976
+					},
+					{
+						"text": "CFT's",
+						"start": 121.06,
+						"end": 121.08,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 121.08,
+						"end": 121.1,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 121.1,
+						"end": 122.26,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 122.26,
+						"end": 122.28,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 122.28,
+						"end": 122.3,
+						"confidence": 0.974
+					},
+					{
+						"text": "CFT's",
+						"start": 122.3,
+						"end": 122.32,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 122.32,
+						"end": 122.34,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 122.34,
+						"end": 122.36,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 122.36,
+						"end": 122.38,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 122.38,
+						"end": 122.4,
+						"confidence": 0.975
+					},
+					{
+						"text": "CFT's",
+						"start": 122.4,
+						"end": 122.42,
+						"confidence": 0.973
+					},
+					{
+						"text": "CFT's",
+						"start": 122.42,
+						"end": 126.98,
+						"confidence": 0.972
+					},
+					{
+						"text": "C",
+						"start": 126.98,
+						"end": 127.0,
+						"confidence": 0.992
+					}
+				]
+			}
+		],
 		"language": "en"
-	},
-	{
-		"text": "Saludos y expresiones. Saludos. Hola. Hello. Hello."
 	}
 ]

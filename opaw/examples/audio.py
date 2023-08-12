@@ -13,15 +13,19 @@ logger = log.get("audio", "logs/audio.log")
 bot = AudioBot()
 
 # transcript (language: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-response = bot.create("audio1.mp3", task="stt", language="en")
-logger.info(f"stt: {response['text']}")
+file = "radio_short.mp3"
 
-# translation
-response = bot.create("audio1.mp3", task="mt", language="en")
-logger.info(f"mt: {response['text']}")
+# official api
+response = bot.create(file, lib="api", task="stt")
+logger.info(f"official api: {response['text']}")
+
+# whisper
+response = bot.create(file, lib="whisper", name="tiny")
+logger.info(f"whisper: {response}")
+
+# whisper_timestamped
+response = bot.create(file, lib="whisper_t", name="tiny", device="cpu")
+logger.info(f"whisper_timestamped: {util.pprints(response)}")
 
 # save history if needed
 bot.save_history("history/audio-hist.json")
-
-
-

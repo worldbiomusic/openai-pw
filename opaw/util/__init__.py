@@ -1,3 +1,4 @@
+import inspect
 import logging
 from opaw.util import log
 import time
@@ -122,3 +123,20 @@ def func_meta(name, desc, properties, required):
         props[prop[0]] = {"type": prop[1], "description": prop[2]}
 
     return function
+
+
+def func_args(func):
+    """
+    Gets function arguments
+    :param func: function
+    :return: list of arguments
+    """
+    signature = inspect.signature(func)
+    return list(signature.parameters.keys())
+
+def pop_func_args(func, dic):
+    """
+    extract(pop) function arguments from kargs
+    """
+    args = func_args(func)
+    return {k: dic.pop(k) for k in args if k in dic}
