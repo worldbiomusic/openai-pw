@@ -4,10 +4,6 @@ from opaw.util import func_meta
 def stock_price(company):
     if company == "APPL":
         return 100
-    elif company == "GOOGL":
-        return 130
-    elif company == "TSLA":
-        return 70
     elif company == "AMZN":
         return 150
     else:
@@ -17,10 +13,10 @@ def stock_price(company):
 
 
 funcs_meta = [
-    func_meta("stock_price",
-              "Get the stock price of a given company",
-              ["company", "string", "The company stock name, e.g. APPL"],
-              ["company"])
+    func_meta("stock_price",  # name
+              "Get the stock price of a given company",  # desc
+              ["company", "string", "The company stock name, e.g. APPL"],  # properties
+              ["company"])  # required
 ]
 
 funcs = {

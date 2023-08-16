@@ -18,7 +18,7 @@ class ImageBot(Bot):
         """
         :kargs: select task "create" or "edit" or "variation"
         """
-        if prompt is None or not kargs.get("task"):
+        if prompt is None or "task" not in kargs:
             return None
 
         model = openai.Image

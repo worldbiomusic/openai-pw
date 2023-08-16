@@ -19,26 +19,26 @@ class ChatBot(Bot):
         self.funcs = [] if funcs is None else funcs  # callback functions
         self.funcs_meta = [] if funcs_meta is None else funcs_meta  # contains name, desc, params...
 
-    def create(self, content=None, call_fn=False, msg_limit=-1, **kargs):
+    def create(self, content=None, call_fn=False, memory=-1, **kargs):
         """
         Gets a response from bot
         :param content: get a response with messages (content)
         :param call_fn: if true, function call will be enabled
-        :param msg_limit: number of recent message limit (if -1, no limit)
+        :param memory: number of recent message limit (if -1, no limit)
         :param kargs: other args (if call_fn is True, self.funcs_info will be passed to "functions")
         :return:
         """
         # default
-        role = kargs["role"] if kargs.get("role") else "user"
+        role = kargs["role"] if "role" in kargs else "user"
 
         # options
         if call_fn:
             kargs["functions"] = self.funcs_meta  # pass functions meta info
-        if msg_limit != -1:
-            if msg_limit == 0:
+        if memory != -1:
+            if memory == 0:
                 self.messages.clear()
             else:
-                self.messages = self.messages[-msg_limit:]
+                self.messages = self.messages[-memory:]
 
         if content is not None:
             content = str(content)
