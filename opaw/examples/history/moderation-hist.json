@@ -4,7 +4,7 @@
 		"input": "I want to kill them!!"
 	},
 	{
-		"id": "modr-7koZgzY9IfFKn2CSjfem8umU3Og5y",
+		"id": "modr-7oCsH6mGS5khXXJRzyXR1VUXciH0h",
 		"model": "text-moderation-005",
 		"results": [
 			{
@@ -23,17 +23,17 @@
 					"violence": true
 				},
 				"category_scores": {
-					"sexual": 1.6340542e-06,
-					"hate": 0.0036268304,
-					"harassment": 0.31952053,
-					"self-harm": 4.2500368e-08,
-					"sexual/minors": 1.3581817e-07,
-					"hate/threatening": 0.0037195487,
-					"violence/graphic": 2.285102e-06,
-					"self-harm/intent": 1.7512112e-09,
-					"self-harm/instructions": 3.9011412e-11,
-					"harassment/threatening": 0.70137763,
-					"violence": 0.9929208
+					"sexual": 1.6226172e-06,
+					"hate": 0.0035227188,
+					"harassment": 0.3147935,
+					"self-harm": 4.162511e-08,
+					"sexual/minors": 1.3254812e-07,
+					"hate/threatening": 0.003578068,
+					"violence/graphic": 2.205933e-06,
+					"self-harm/intent": 1.7143812e-09,
+					"self-harm/instructions": 3.8152148e-11,
+					"harassment/threatening": 0.6967038,
+					"violence": 0.9929408
 				}
 			}
 		]

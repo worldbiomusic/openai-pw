@@ -13,7 +13,7 @@ def loop_chat(model="gpt-3.5-turbo",
     bot = ChatBot(model)
     bot.add_message(system_prompt, role="system")
     logger.info("(type \"bye\" to quit.)")
-    sleep(0.1)  # wait for logger buffering
+    sleep(0.1)  # wait for the logger buffering
 
     while True:
         user_input = input("User: ")
@@ -21,9 +21,8 @@ def loop_chat(model="gpt-3.5-turbo",
             logger.info("BYE!")
             break
         response = bot.create(user_input)
-        bot_response = response["choices"][0]["message"]["content"]
-        logger.info(f"Bot: {bot_response}\n")
-        sleep(0.1)  # wait for logger buffering
+        logger.info(f"Bot: {bot.grab(response)}\n")
+        sleep(0.1)  # wait for the logger buffering
 
     bot.save_history(history_file)
 

@@ -14,7 +14,7 @@ logger = log.get("load-chat", "logs/load-chat.log")
 bot = ChatBot()
 bot.load_msgs("history/chat-hist.json")  # load history
 
-response = bot.create("Then, what products are made in there?")
-logger.info(f"response: {bot._get_res_msg(response)}")
+response = bot.create("Then, has the company's stock been listed?")
+logger.info(f"response: {bot.grab(response)}")
 
 bot.save_history("history/load-chat-hist.json")  # save history

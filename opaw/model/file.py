@@ -47,3 +47,9 @@ class FileBot(Bot):
             self._history_res(response)
 
         return response
+
+    def grab(self, response):
+        """
+        :return: original response
+        """
+        return response

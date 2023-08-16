@@ -90,3 +90,9 @@ class AudioBot(Bot):
 
         # whisper_t.transcribe function args
         return whisper_t.transcribe(model, audio, **util.pop_func_args(whisper_t.transcribe, kargs))
+
+    def grab(self, response):
+        """
+        :return: response's text
+        """
+        return response["text"]  # all libraries have "text" key

@@ -24,3 +24,8 @@ class CompletionBot(Bot):
         self._history_res(response)
         return response
 
+    def grab(self, response):
+        """
+        :return: response's text
+        """
+        return response["choices"][0]["text"]

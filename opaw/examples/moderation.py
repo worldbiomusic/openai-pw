@@ -16,13 +16,7 @@ response = bot.create(prompt)
 logger.info(response)
 
 # show results that are flagged
-result = response["results"][0]
-flagged = result["flagged"]
-categories = result["categories"]
-scores = result["category_scores"]
-true_flags = {flag: scores[flag] for flag, value in categories.items() if value}
-logger.info(f"flagged: {flagged}")
-logger.info(f"flags: {true_flags}")
+logger.info(f"flags: {bot.grab(response)}")
 
 # save history if needed
 bot.save_history("history/moderation-hist.json")

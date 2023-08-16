@@ -25,3 +25,12 @@ class ModerationBot(Bot):
         response = openai.Moderation.create(**request)
         self._history_res(response)
         return response
+
+    def grab(self, response):
+        """
+        :return: a dict containing flagged categories and scores (e.g. {"violence": 0.523, "sexual": 0.833})
+        """
+        result = response["results"][0]
+        categories = result["categories"]
+        scores = result["category_scores"]
+        return {flag: scores[flag] for flag, value in categories.items() if value}

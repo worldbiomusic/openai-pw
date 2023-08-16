@@ -20,8 +20,7 @@ bot = EditBot()
 prompt = "Hey, this was my filst car!!"  # filst -> first
 instruction = "Fix the spelling mistakes"
 response = bot.create(prompt, instruction=instruction)
-text = response["choices"][0]["text"]
-logger.info(f"text: {text}")
+logger.info(f"text: {bot.grab(response)}")
 
 # save history if needed
 bot.save_history("history/edit-hist.json")

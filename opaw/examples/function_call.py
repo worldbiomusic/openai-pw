@@ -23,4 +23,4 @@ else:
     logger.info("no function call")
 
 # save model history
-bot.save_history("history/chat-fn-call-hist.json")
+bot.save_history("history/function-call-hist.json")

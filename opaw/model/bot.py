@@ -71,3 +71,11 @@ class Bot:
             self.history = json.load(hist)
         elif isinstance(hist, dict):  # json dict
             self.history = hist
+
+    def grab(self, response):
+        """
+        grabs important data from response
+        :param response: the response from the bot
+        :return: grabbed data
+        """
+        pass
