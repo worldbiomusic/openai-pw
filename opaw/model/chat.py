@@ -14,7 +14,8 @@ class ChatBot(Bot):
     def __init__(self, model=util.default_models["chat"],
                  messages=None, funcs=None, funcs_meta=None):
         super().__init__(model, "chat")
-        # conversations
+
+        # messages: conversation list of dict, contains role and content (see chat-history.json)
         self.messages = [] if messages is None else messages
         self.funcs = [] if funcs is None else funcs  # callback functions
         self.funcs_meta = [] if funcs_meta is None else funcs_meta  # contains name, desc, params...
@@ -34,19 +35,18 @@ class ChatBot(Bot):
         # options
         if call_fn:
             kargs["functions"] = self.funcs_meta  # pass functions meta info
-        if memory != -1:
-            if memory == 0:
-                self.messages.clear()
-            else:
-                self.messages = self.messages[-memory:]
 
         if content is not None:
             content = str(content)
             self.add_message(content, role=role)
 
+        msgs = copy.deepcopy(self.messages)
+        if memory >= 0:
+            msgs = self.messages[-memory - 1:]  # -1 is for the appended last response
+
         request = {
             "model": self.model,
-            "messages": self.messages,
+            "messages": msgs,
             **kargs
         }
 
@@ -55,7 +55,7 @@ class ChatBot(Bot):
         response = openai.ChatCompletion.create(**request)
 
         # insert response message to the messages
-        res_msg = self._get_res_msg(response)
+        res_msg = self._get_msg(response)
         self.messages.append(res_msg)
         self._history_res(response)
 
@@ -76,10 +76,7 @@ class ChatBot(Bot):
             return function(**fn_args)
 
     def get_fn_call(self, response):
-        return self._get_res_msg(response).get("function_call")
-
-    def _get_res_msg(self, response):
-        return response["choices"][0]["message"]
+        return self._get_msg(response).get("function_call")
 
     def total_tokens(self, messages):
         """
@@ -110,6 +107,17 @@ class ChatBot(Bot):
         self.messages = next((item["messages"] for item in hist[::-1] if "messages" in item), [])
 
         # insert last response to messages
-        last_res_msg = next((self._get_res_msg(item) for item in hist[::-1] if "choices" in item), None)
+        last_res_msg = next((self._get_msg(item) for item in hist[::-1] if "choices" in item), None)
         self.messages.append(last_res_msg)
 
+    def _get_msg(self, response):
+        """
+        :return: grabs a bot's message of the response message
+        """
+        return response["choices"][0]["message"]
+
+    def grab(self, response):
+        """
+        :return: grabs a message content of the response message
+        """
+        return self._get_msg(response)["content"]

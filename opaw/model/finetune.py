@@ -40,3 +40,9 @@ class FinetuneBot(Bot):
         response = methods[task](**request)
         self._history_res(response)
         return response
+
+    def grab(self, response):
+        """
+        :return: original response
+        """
+        return response

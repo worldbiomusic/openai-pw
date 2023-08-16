@@ -13,8 +13,7 @@ logger = log.get("completion", "logs/completion.log")
 bot = CompletionBot()
 prompt = "Tell some lies"
 response = bot.create(prompt, max_tokens=50)
-res_msg = response["choices"][0]["text"]
-logger.info(res_msg)
+logger.info(f"response: {bot.grab(response)}")
 
 # save history if needed
 bot.save_history("history/completion-hist.json")

@@ -12,8 +12,7 @@ logger = log.get("chat", "logs/chat.log")
 # chat
 def chat(prompt, **kargs):
     response = bot.create(prompt, **kargs)
-    res_msg = response["choices"][0]["message"]["content"]
-    logger.info(f"response: {res_msg}")
+    logger.info(f"response: {bot.grab(response)}")
 
 
 bot = ChatBot()
@@ -24,6 +23,7 @@ chat("Then, who made it?")
 
 # if memory is 0, bot don't know previous conversation (see chat-history.json for detail)
 chat("What models are made in there?", memory=0)
+chat("You know what I have said before now. What models are made in there?")  # bot knows previous conversation now
 
 # save history if needed
 bot.save_history("history/chat-hist.json")

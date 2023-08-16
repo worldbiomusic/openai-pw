@@ -46,19 +46,20 @@ class ImageBot(Bot):
         self._history_res(response)
         return response
 
-    def save_img(self, data, path):
+    def save_img(self, response, path):
         """
-        saves given image data to the path
-        :param data: img url or uri(data scheme)
+        saves given image to the path
+        :param response: the response from create()
         :param path: the path to be saved
         """
         util.mkdirs(path)  # create parent dirs
+        data = self.grab(response)
         d_format = self.img_format(data)
 
         if d_format == "url":
-            response = requests.get(data)
+            data = requests.get(data)
             with open(path, "wb") as f:
-                f.write(response.content)
+                f.write(data.content)
         elif d_format == "uri":
             with open(path, "wb") as f:
                 f.write(base64.b64decode(data))
@@ -69,3 +70,10 @@ class ImageBot(Bot):
        """
         parsed = urlparse(data)
         return "url" if parsed.scheme and parsed.netloc else "uri"
+
+    def grab(self, response):
+        """
+        :return: url or uri(data scheme) of the response
+        """
+        res = response['data'][0]
+        return res['url'] if 'url' in res else res['b64_json']

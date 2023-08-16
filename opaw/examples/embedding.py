@@ -13,8 +13,7 @@ logger = log.get("embedding", "logs/embedding.log")
 bot = EmbeddingBot()
 prompt = "Cheese is melting on my laptop"
 response = bot.create(prompt)
-embeddings = response["data"][0]["embedding"]
-logger.info(f"embeddings: {embeddings}")
+logger.info(f"embeddings: {bot.grab(response)}")
 
 # save history if needed
 bot.save_history("history/embedding-hist.json")

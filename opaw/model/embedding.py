@@ -23,3 +23,9 @@ class EmbeddingBot(Bot):
         response = openai.Embedding.create(**request)
         self._history_res(response)
         return response
+
+    def grab(self, response):
+        """
+        :return: response's embeddings
+        """
+        return response["data"][0]["embedding"]

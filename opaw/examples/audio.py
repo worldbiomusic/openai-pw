@@ -17,7 +17,7 @@ file = "radio_short.mp3"
 
 # official api
 response = bot.create(file, lib="api", task="stt")
-logger.info(f"official api: {response['text']}")
+logger.info(f"official api: {bot.grab(response)}")
 
 # whisper
 response = bot.create(file, lib="whisper", name="tiny")
