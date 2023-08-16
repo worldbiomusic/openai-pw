@@ -10,4 +10,4 @@ rm dist/*
 python setup.py sdist bdist_wheel
 
 # upload to pypi
-twine upload dist/*
+#twine upload dist/*
