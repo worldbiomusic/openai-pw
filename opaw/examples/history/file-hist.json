@@ -4,30 +4,30 @@
 		"purpose": "fine-tune"
 	},
 	{
-		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
+		"id": "file-D4EMRF7UQAdYmv3XJNbsCxeD",
 		"object": "file",
 		"purpose": "fine-tune",
 		"filename": "file",
 		"bytes": 392,
-		"created_at": 1691391585,
+		"created_at": 1692028127,
 		"status": "uploaded",
 		"status_details": null
 	},
 	{
-		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z"
+		"id": "file-D4EMRF7UQAdYmv3XJNbsCxeD"
 	},
 	{
-		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z",
+		"id": "file-D4EMRF7UQAdYmv3XJNbsCxeD",
 		"object": "file",
 		"purpose": "fine-tune",
 		"filename": "file",
 		"bytes": 392,
-		"created_at": 1691391585,
+		"created_at": 1692028127,
 		"status": "uploaded",
 		"status_details": null
 	},
 	{
-		"id": "file-ZyeAvL8tuTrQ1dG3elrRPB9Z"
+		"id": "file-D4EMRF7UQAdYmv3XJNbsCxeD"
 	},
 	"{\"prompt\":  \"Hi, what is your name?\", \"completion\": \"Hello! I'm ChatGPT!.\"}\r\n{\"prompt\":  \"What is your job?\", \"completion\": \"My job is helping people for general purposes.\"}\r\n{\"prompt\":  \"How can you help people?\", \"completion\": \"I can understand context and create something like pine-apple pizza.\"}\r\n{\"prompt\":  \"Then, what do we have to do to save the earth?\", \"completion\": \"Too late.\"}\r\n"
 ]

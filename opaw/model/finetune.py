@@ -15,7 +15,7 @@ class FinetuneBot(Bot):
         """
         :param _: is not used (use kargs instead)
         """
-        if not kargs.get("task"):
+        if "task" not in kargs:
             return None
 
         model = openai.FineTune

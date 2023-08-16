@@ -46,7 +46,7 @@ class AudioBot(Bot):
         :param file: audio file path
         :param kargs: params for each library
         """
-        if file is None or not kargs.get("task"):
+        if file is None or "task" not in kargs:
             return None
 
         model = openai.Audio
