@@ -62,8 +62,10 @@ def models():
 
 
 def mkdirs(file):
-    parent_dir = os.path.dirname(file)
-    os.makedirs(parent_dir, exist_ok=True)
+    if not os.path.exists(file):
+        parent_dir = os.path.dirname(file)
+        mkdirs(parent_dir)
+        os.makedirs(file, exist_ok=True)
 
 
 def filter_args(data):
@@ -140,3 +142,8 @@ def pop_func_args(func, dic):
     """
     args = func_args(func)
     return {k: dic.pop(k) for k in args if k in dic}
+
+# main
+if __name__ == '__main__':
+    print('go')
+    mkdirs("a/b/c.txt")
