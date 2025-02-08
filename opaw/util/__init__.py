@@ -61,11 +61,13 @@ def models():
     return [model["id"] for model in r["data"]]
 
 
-def mkdirs(file):
-    if not os.path.exists(file):
-        parent_dir = os.path.dirname(file)
-        mkdirs(parent_dir)
-        os.makedirs(file, exist_ok=True)
+def mkdirs(directory):
+    os.makedirs(directory, exist_ok=True)
+
+
+def create_file(file):
+    mkdirs(os.path.dirname(file))
+    open(file, 'w').close()
 
 
 def filter_args(data):
@@ -136,12 +138,14 @@ def func_args(func):
     signature = inspect.signature(func)
     return list(signature.parameters.keys())
 
+
 def pop_func_args(func, dic):
     """
     extract(pop) function arguments from kargs
     """
     args = func_args(func)
     return {k: dic.pop(k) for k in args if k in dic}
+
 
 # main
 if __name__ == '__main__':

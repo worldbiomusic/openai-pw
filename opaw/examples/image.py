@@ -13,15 +13,16 @@ logger = log.get("image", "logs/image.log")
 bot = ImageBot()
 
 # create a image (URL)
-prompt = "A black cat sitting on a frozen lake."
+# prompt = "a cute avocado with palette in hand wearing a beret, flat naive icon"
+prompt = "A man using a computer, flat naive icon"
 response = bot.create(prompt, task="create", size="256x256")
-bot.save_img(response, "imgs/img-url.jpg")
+# bot.save_img(response, "imgs/img-url.jpg")
 logger.info(f"image: {bot.grab(response)}")
 
-# data scheme (URI) (base64)
-response = bot.create(prompt, task="create", size="256x256", response_format="b64_json")
-bot.save_img(response, "imgs/img-uri.jpg")
-# logger.info(f"image: {bot.grab(response)}")  # too long to print
+# # data scheme (URI) (base64)
+# response = bot.create(prompt, task="create", size="256x256", response_format="b64_json")
+# bot.save_img(response, "imgs/img-uri.jpg")
+# # logger.info(f"image: {bot.grab(response)}")  # too long to print
 
 # save history if needed
-bot.save_history("history/image-hist.json")
+# bot.save_history("history/image-hist.json")

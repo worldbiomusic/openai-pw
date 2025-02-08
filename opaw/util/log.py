@@ -10,7 +10,7 @@ levels = {
 
 
 def get(name, file="./log.log"):
-    from opaw.util import mkdirs
+    from opaw.util import mkdirs, create_file
 
     """
     Gets a logger with the given name (singleton)
@@ -21,7 +21,7 @@ def get(name, file="./log.log"):
 
     if not logger.hasHandlers():
         # make parent dirs if needed
-        mkdirs(file)
+        create_file(file)
 
         # stream handler
         stream_formatter = logging.Formatter(
