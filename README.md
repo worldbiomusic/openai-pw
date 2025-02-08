@@ -1,5 +1,6 @@
 [![PyPi](https://img.shields.io/pypi/v/opaw)](https://pypi.org/project/opaw/)
 
+> ❗Deprecated
 
 # openai-pw
 Unofficial python wrapper of [OpenAI](https://openai.com/) API.
